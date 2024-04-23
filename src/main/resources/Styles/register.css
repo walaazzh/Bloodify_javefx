@@ -1,0 +1,261 @@
+@font-face {
+    font-family: 'Rubik';
+    src: url("./Inconsolata/static/Inconsolata-Regular.ttf");
+}
+
+.centered-pane {
+    -fx-alignment: center; /* Center alignment */
+}
+/* AnchorPane */
+.anchor-pane-container {
+    -fx-background-color: #FFFFFF; /* Grey background inside */
+    -fx-border-color: #FFFFFF; /* Royale Blue border color outside */
+    -fx-border-width: 6px; /* Border width */
+    -fx-border-radius: 10px; /* Rounded corners */
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.3), 10, 0, 0, 0), /* Outer shadow */
+    inset dropshadow(three-pass-box, rgba(255,255,255,0.3), 10, 0, 0, 0); /* Inset shadow */
+    -fx-padding: 20px; /* Padding inside the AnchorPane */
+    -fx-background-radius: 10px; /* Apply border radius to the background */
+    -fx-cursor: default;
+    -fx-alignment: center; /* Center alignment */
+
+
+}
+.separator{
+    -fx-background-color: black; /* Color of the separator line */
+    -fx-color: #000000; /* Royale Blue border color outside */
+    -fx-min-height: 2px; /* Adjust the height of the separator line */
+    -fx-max-height: 2px;
+    -fx-cursor: default; /* Cursor style */
+}
+
+/* Text */
+.text-label {
+    -fx-fill: #092aff; /* Blue text color */
+    -fx-font-size: 14px; /* Font size */
+}
+
+/* Text Field */
+.text-field {
+    -fx-background-color: white; /* White background */
+    -fx-border-color: #cccccc; /* Light Grey border */
+    -fx-border-width: 1px; /* Border width */
+    -fx-border-radius: 5px; /* Rounded corners */
+    -fx-padding: 6px; /* Padding */
+    -fx-font-family: "Rubik", sans-serif;
+    -fx-cursor: text; /* Cursor style */
+
+
+}
+
+/* Password Field */
+.password-field {
+    -fx-background-color: white; /* White background */
+    -fx-border-color: #cccccc; /* Light Grey border */
+    -fx-border-width: 1px; /* Border width */
+    -fx-border-radius: 5px; /* Rounded corners */
+    -fx-padding: 6px; /* Padding */
+    -fx-font-family: "Rubik", sans-serif;
+
+}
+
+/* Button */
+.button-register {
+    -fx-background-color: #0074e4; /* Royale Blue */
+    -fx-text-fill: white; /* White text color */
+    -fx-font-size: 14px; /* Font size */
+    -fx-font-weight: bold; /* Bold font */
+    -fx-padding: 10px 20px; /* Padding */
+    -fx-border-radius: 5px; /* Rounded corners */
+    -fx-cursor: hand; /* Cursor style */
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 10, 0.5, 0, 2);
+    fx-alignment: center;
+    -fx-content-display: center;
+}
+
+.button-register:hover {
+    -fx-background-color: #0056b3; /* Darker shade of blue on hover */
+}
+
+/* Hyperlink */
+.hyperlink-signin {
+    -fx-text-fill: #0074e4; /* Royale Blue */
+    -fx-font-size: 14px; /* Font size */
+    -fx-cursor: hand; /* Cursor style */
+    -fx-border-color: transparent;
+
+}
+
+.hyperlink-signin:hover {
+    -fx-underline: true; /* Underline on hover */
+    -fx-border-color: transparent;
+
+}
+
+/* CSS for changing the appearance of the progress bar */
+.progress-bar {
+    -fx-background-color: #FFFFFF; /* Background color of the progress bar */
+    -fx-padding: 0.25em; /* Padding around the progress bar */
+    -fx-pref-height: 20px; /* Preferred height of the progress bar */ /* Shadow effect */
+
+}
+
+
+/* Remove the default blue color of the progress bar */
+.progress-bar .bar .background {
+    -fx-background-color: transparent;
+}
+
+/* Change the color of the progress bar's indicator */
+
+.progress-bar-weak .bar {
+    -fx-accent: red; /* Red color for weak password */
+}
+
+/* Medium password style */
+.progress-bar-medium .bar {
+    -fx-accent: #ffff00; /* Yellow color for medium password */
+}
+.progress-bar-good .bar {
+    -fx-accent: #82ee82; /* Yellow color for medium password */
+}
+/* Strong password style */
+.progress-bar-strong .bar {
+    -fx-accent: green; /* Green color for strong password */
+}
+/* ToggleButton */
+.toggle-button {
+    -fx-background-color: transparent;
+    -fx-padding: 0.3em; /* Adjust padding */
+}
+
+.toggle-button:selected .box {
+    -fx-background-color: #0074e4; /* Change background color when selected */
+}
+/* Eye Icon */
+.eye-icon {
+    -fx-font-family: "FontAwesome";
+    -fx-font-size: 18px; /* Adjust size as needed */
+    -fx-fill: #666666; /* Eye icon color */
+}
+.googleSignInButton {
+    -fx-background-color: white; /* Google blue */
+    /*-fx-text-fill: #4285F4;*/
+    -fx-text-fill: black;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-padding: 8px 16px;
+    -fx-border-radius: 4px;
+    -fx-border-color: black;
+    -fx-border-width: 0.1px;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 10, 0.5, 0, 2);
+}
+
+.googleSignInButton:hover {
+    -fx-background-color: #f2f2f2; /* Light gray */
+    /*-fx-text-fill: #3c78dc; !* Darker shade of Google blue *!*/
+    -fx-cursor: hand;
+}
+.primary-color {
+    -fx-background-color: #0074e4; /* Royale Blue */
+}
+
+/*.secondary-color {*/
+/*    -fx-background-color: #f5f3f7; !* Light Grey *!*/
+/*}*/
+.secondary-color {
+    -fx-background-color: linear-gradient(to bottom, #eaf1fb, #eaf1fb); /* Gradient from white to #eaf1fb */
+}
+
+.label1{
+    font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 1.25;
+    letter-spacing: -0.012em;
+    color: #0e0e0e;
+}
+/*.separator {*/
+/*    /*/
+/*    border-top: 2px solid #000000; !* Set border style to create a solid line *!*/
+/*    margin: 20px 0; !* Add margin for spacing *!*/
+/*    -fx-cursor: default;*/
+/*}*/
+/* Remove default focus outline from hyperlinks */
+.hyperlink-signin:disabled {
+    -fx-opacity: 0.5; /* Dim the opacity when disabled */
+    -fx-border-color: transparent;
+
+}
+
+.hyperlink-signin:disabled:hover {
+    -fx-underline: false; /* Remove underline on hover when disabled */
+    -fx-border-color: transparent;
+
+}
+.hyperlink-signin:pressed {
+    -fx-focus-color: transparent; /* Remove focus outline when pressed */
+    -fx-border-color: transparent;
+
+}
+/*.separator {*/
+/*    -fx-scale-y: 2.0; !* Makes the separator 2 times thicker *!*/
+/*}*/
+/*.custom-separator {*/
+/*    -fx-border-color: black;*/
+/*    -fx-border-width: 0 0 0px 0; !* Makes a bottom border that looks like a bolder separator *!*/
+/*    -fx-pref-height: 2px; !* Preferred height to ensure it looks like a line *!*/
+/*}*/
+.text-field-error {
+    -fx-border-color: red;
+    -fx-border-width: 2;
+    /* Optional styles to enhance the error indication */
+}
+.text-field-accepted {
+    -fx-border-color: green;
+    -fx-border-width: 2;
+    /* Optional styles to enhance the error indication */
+}
+label2 {
+    -fx-font-family: 'Rubik';
+    font-weight: 500; /* Medium font weight */
+    color: #1C2B33; /* Dark gray color */
+}
+.imageView {
+     -fx-cursor: hand;
+ }
+.imageView1{
+    -fx-cursor: default;
+}
+.alert-error {
+    -fx-background-color: red;
+    -fx-border-color: red;
+    -fx-text-fill: black;
+}
+/* Style for the ComboBox box */
+.combo-box-remember .combo-box-base {
+    -fx-background-color: white; /* Background color */
+    -fx-border-color: #CCCCCC; /* Border color */
+    -fx-border-width: 1px; /* Border width */
+    -fx-border-radius: 5px; /* Border radius */
+    -fx-padding: 5px; /* Padding */
+    -fx-font-size: 14px; /* Font size */
+    -fx-pref-width: 150px; /* Preferred width */
+    -fx-cursor: hand; /* Cursor style */
+}
+
+.fbSignInButton {
+    -fx-background-color: white; /* Google blue */
+    -fx-text-fill: black;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-padding: 8px 16px;
+    -fx-border-radius: 4px;
+    -fx-border-color: black;
+    -fx-border-width: 0.1px;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 10, 0.5, 0, 2);
+}
+
+.fbSignInButton:hover {
+    -fx-background-color: #f0f0f0; /* Light gray */
+}

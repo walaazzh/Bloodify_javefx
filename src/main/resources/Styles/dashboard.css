@@ -1,0 +1,375 @@
+@font-face {
+    font-family: 'Metropolice';
+    src: url("./Metropolis-Bold.ttf");
+}
+/* Styling for the VBox containing the buttons */
+/* Styling for the VBox containing the buttons */
+/* Styling for the VBox containing the buttons */
+
+/* Styling for the blue-purple buttons */
+.button-blue-purple {
+    -fx-background-color: #7b68ee; /* Lighter blue-purple background color */
+    -fx-text-fill: white; /* White text color */
+    -fx-padding: 10px 1px; /* Add padding to the buttons */
+    -fx-font-size: 16px; /* Increase font size */
+    -fx-pref-height: 30px; /* Set the preferred height */
+    -fx-cursor: hand;
+    -fx-border-width: 0; /* No border */
+    -fx-border-radius: 11px; /* Rounded corners */
+
+}
+
+/* Hover effect for the blue-purple buttons */
+.button-blue-purple:hover {
+    -fx-background-color: #483d8b; /* Darker shade of blue-purple on hover */
+}
+
+
+/* Styling for the white button */
+.button-white {
+    -fx-background-color: white; /* White background color */
+    -fx-text-fill: #666; /* Black text color */
+    -fx-font-size: 17px; /* Font size */
+    -fx-cursor: hand ;
+    -fx-border-radius: 11px; /* Rounded corners */
+
+
+}
+
+/* Hover effect for the white button */
+.button-white:hover {
+    -fx-background-color: #f0f0f0; /* Light gray background color */
+}
+
+/* Styling for the AnchorPane */
+.anchor-pane {
+    -fx-background-color: #ffffff; /* Light grey background color */
+}
+
+/* Styling for the VBox containing buttons */
+/* Styling for the AnchorPane */
+.anchor-pane {
+    -fx-background-color: rgba(255, 255, 255, 0.8); /* Lighter grey background color */
+}
+
+/* Styling for the VBox containing buttons */
+.vbox-buttons {
+    -fx-background-color: #ffffff; /* Light gray background color */
+    -fx-padding: 10px 1px; /* Add padding to the buttons */
+    -fx-spacing: 10px; /* Add space between the buttons */
+    -fx-alignment: top_center; /* Align the buttons to the top center */
+    -fx-font-family: 'Rubik';
+    -fx-border-radius: 15px; /* Rounded corners */
+
+
+
+}
+
+/* Styling for the HBox containing the search bar */
+/* Styling for the HBox containing the search bar */
+.hbox-search {
+    -fx-alignment: center; /* Align items to the center */
+    -fx-padding: 12px 1px; /* Add padding to the buttons */
+    -fx-border-width: 1px; /* Border width */
+    -fx-border-radius: 5px; /* Border radius */
+    -fx-background-color: white; /* White background color */
+    -fx-font-family: 'Rubik';
+
+
+}
+
+/* Styling for the search bar TextField */
+.text-field {
+    -fx-pref-width: 300px; /* Set preferred width */
+    -fx-background-color: #f0f0f0; /* White background color */
+    -fx-font-family: 'Rubik';
+
+}
+
+
+/* Styling for the search bar TextField */
+
+
+/* Styling for the VBox */
+.vbox {
+    -fx-background-color: white; /* White background color */
+}
+
+/* Styling for the HBox */
+.hbox {
+    -fx-background-color: white; /* White background color */
+}
+/* TableView container styling */
+.table-view {
+    -fx-background-color: #f0f0f0; /* Light gray background color */
+    -fx-effect: dropshadow(three-pass-box, #6a5acd, 10, 0, 0, 0); /* Purple drop shadow */
+}
+
+/* TableColumn headers styling */
+.table-column .label {
+    -fx-font-size: 14px; /* Font size for column headers */
+    -fx-font-weight: bold; /* Bold font weight */
+    -fx-text-fill: #6a5acd; /* Purple color for text */
+    -fx-font-family: 'Rubik';
+    -fx-padding: 8px; /* Add padding for better spacing */
+    -fx-alignment: center-left; /* Center-left alignment for header text */
+}
+
+/* TableView cells styling */
+.table-cell {
+    -fx-font-size: 14px; /* Font size for cell content */
+    -fx-text-fill: #111111; /* Dark gray text color */
+    -fx-font-family: 'Rubik';
+    -fx-padding: 8px; /* Add padding for better spacing */
+    -fx-alignment: center-left; /* Center-left alignment for cell content */
+}
+
+/* TableView alternating row colors */
+.table-row-cell:odd {
+    -fx-background-color: #f8f8f8; /* Light gray background color for odd rows */
+}
+
+/* TableView hover effect */
+.table-row-cell:hover {
+    -fx-background-color: #eaeaea; /* Lighter gray background color on hover */
+}
+
+/* TableView item clicked effect */
+.table-row-cell:filled {
+    -fx-background-color: #cfcfcf; /* Light gray background color when item is clicked */
+}
+.table-row-cell:hover {
+    -fx-background-color: #eaeaea; /* Lighter gray background color on hover */
+}
+
+/* Styling for TableView clicked item */
+.table-row-cell:selected {
+    -fx-background-color: white; /* Blue color for clicked item */
+    -fx-text-fill: white; /* White text color for clicked item */
+}
+
+
+/* Styling for user name label */
+.user-name-label {
+    /*-fx-text-fill: #333; !* Dark gray text color *!*/
+    -fx-font-size: 15px; /* Larger font size */
+    -fx-alignment: center; /* Align the label to the left */
+    -fx-font-family: 'Rubik';
+    color: #1C2B33; /* Dark gray color */}
+
+.hyperlink {
+    /*-fx-text-fill: #666666; !* Grey color *!*/
+    -fx-font-size: 17px; /* Adjust font size */
+    -fx-font-family: 'Rubik';
+    -fx-underline: false; /* Disable underline */
+    -fx-text-fill: #1C2B33; /* Dark gray color */
+}
+
+/* Styling for hover effect */
+.hyperlink:hover {
+    -fx-text-fill: #333333; /* Darker grey color on hover */
+    -fx-cursor: hand; /* Change cursor to indicate hyperlink */
+}
+.hyperlink:pressed {
+    -fx-focus-color: transparent; /* Remove focus outline when pressed */
+}
+/*.table-cell .button {*/
+/*    !*-fx-background-color: #ee0000; !* Purple color *!*!*/
+/*    -fx-background-color: #6a5acd; !* Purple color *!*/
+/*    -fx-text-fill: white; !* White text color *!*/
+/*    -fx-font-size: 14px; !* Font size *!*/
+/*    -fx-padding: 5px 10px; !* Padding *!*/
+/*    -fx-background-radius: 5px; !* Rounded corners *!*/
+/*    -fx-border-radius: 5px; !* Rounded corners for border *!*/
+/*    -fx-font-family: 'Rubik';*/
+/*    -fx-cursor: hand ;*/
+
+/*}*/
+
+/*.table-cell .button:hover {*/
+/*    !*-fx-background-color: #ab0a12; !* Darker shade of purple-blue on hover *!*!*/
+/*    -fx-background-color: #483d8b; !* Darker shade of purple-blue on hover *!*/
+/*}*/
+
+/* Button styles */
+.table-cell .update-button {
+    -fx-background-color: #007bff; /* Blue color */
+    -fx-text-fill: white; /* White text color */
+    -fx-font-size: 14px; /* Font size */
+    -fx-padding: 4px 8px; /* Padding */
+    -fx-background-radius: 5px; /* Rounded corners */
+    -fx-border-radius: 5px; /* Rounded corners for border */
+    -fx-font-family: 'Rubik';
+    -fx-cursor: hand ;
+    -fx-min-width: 70px; /* Smaller minimum width */
+    -fx-max-width: 70px;
+}
+
+.table-cell .delete-button {
+    -fx-background-color: #dc3545; /* Red color */
+    -fx-text-fill: white; /* White text color */
+    -fx-font-size: 14px; /* Font size */
+    -fx-padding: 4px 8px; /* Padding */
+    -fx-background-radius: 5px; /* Rounded corners */
+    -fx-border-radius: 5px; /* Rounded corners for border */
+    -fx-font-family: 'Rubik';
+    -fx-cursor: hand ;
+    -fx-min-width: 70px; /* Smaller minimum width */
+    -fx-max-width: 70px;
+}
+/* Remove blue line on column border */
+.table-view .column-header-background {
+    -fx-background-color: transparent; /* Transparent background */
+}
+
+.table-view .column-header-background .column-header {
+    -fx-border-color: transparent; /* Transparent border color */
+}
+
+
+.table-cell .update-button:hover {
+    -fx-background-color: #0056b3; /* Darker shade of blue on hover */
+}
+
+.table-cell .delete-button:hover {
+    -fx-background-color: #c82333; /* Darker shade of red on hover */
+}
+
+.label-title {
+    -fx-font-size: 20px; /* Font size */
+    -fx-font-weight: bold; /* Font weight */
+    -fx-text-fill: #333; /* Text color */
+    -fx-font-family: 'Rubik';
+}
+
+.title-label {
+    -fx-text-fill: #6a5acd; /* Dark purple color */
+    -fx-font-size: 24px; /* Larger font size */
+    -fx-alignment: center_left; /* Align the label to the left */
+    -fx-font-family: 'Metropolice';
+    -fx-padding: 0 -10 0 20; /* Adjust left and right padding */
+}
+
+.title-label1 {
+    -fx-text-fill: #473ba4; /* Dark purple color */
+    -fx-font-size: 27px; /* Larger font size */
+    -fx-alignment: center_left; /* Align the label to the left */
+    -fx-padding: 0 -10 0 20; /* Adjust left and right padding */
+    -fx-font-family: 'Rubik';
+}
+
+.button1{
+    -fx-background-color: #6a5acd; /* Blue-purple background color */
+    -fx-text-fill: white; /* White text color */
+    -fx-font-size: 14px; /* Increase font size */
+    -fx-cursor: hand ;
+
+}
+/* Style for PieChart */
+.pie-chart {
+    -fx-border-radius: 10px;
+    -fx-border-color: #1C2B33;
+    -fx-border-width: 1px;
+}
+
+/* Style for PieChart data */
+
+/* Style for BarChart */
+/* Apply border and background radius to the entire chart */
+.bar-chart {
+    -fx-border-radius: 10px;
+    -fx-border-color: #1C2B33;
+    -fx-border-width: 1px;
+    -fx-background-radius: 5px;
+}
+
+/* Set the fill color for the bars */
+.bar-chart .bar {
+    -fx-background-color: royalblue; /* Royal blue color */
+}
+.axis-label {
+    -fx-text-fill: black;
+}
+/* Apply style to the legend keys in the BarChart */
+.bar-chart .chart-legend {
+    -fx-background-color: transparent;
+}
+
+.bar-chart .chart-legend-item-symbol {
+    -fx-background-color: royalblue;
+}
+
+/* Style labels */
+.label_admin {
+    -fx-text-fill: #7b68ee;
+}
+
+/* Style text inputs */
+.text-field_admin {
+    -fx-background-color: transparent;
+    -fx-text-fill: #000000; /* Change text color as needed */
+    -fx-border-color: #7b68ee;
+}
+
+/* Style password inputs */
+.password-field_admin {
+    -fx-background-color: transparent;
+    -fx-text-fill: #000000; /* Change text color as needed */
+    -fx-border-color: #7b68ee;
+}
+
+/* Style hyperlinks */
+.hyperlink_admin {
+    -fx-text-fill: #7b68ee;
+}
+
+/* Style radio buttons */
+.radio-button_admin {
+    -fx-text-fill: #7b68ee;
+}
+
+/* Style radio button text */
+.radio-button_admin .text {
+    -fx-fill: #7b68ee;
+}
+
+.search-field {
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: right center;
+    -fx-background-size: 16px 16px;
+    -fx-padding: 4px 20px 4px 4px; /* Adjust padding as needed */
+}
+.logout-button {
+    -fx-background-color: #CCCCCC; /* Light gray background */
+    -fx-text-fill: #1C2B33; /* Dark green text */
+    -fx-font-size: 14px;
+    -fx-padding: 8px 16px; /* Padding for the button */
+    -fx-border-radius: 4px; /* Rounded corners */
+}
+
+.logout-button:hover {
+    -fx-background-color: #BBBBBB; /* Light gray background on hover */
+}
+/* Button styles */
+/* Button styles */
+.delete-button {
+    -fx-background-color: #dc3545; /* Red background color */
+    -fx-text-fill: white; /* White text color */
+    -fx-pref-width: 80px; /* Preferred width */
+    -fx-pref-height: 30px; /* Preferred height */
+}
+
+.delete-button:hover {
+    -fx-background-color: #c82333; /* Darker red background color on hover */
+}
+
+.update-button {
+    -fx-background-color: #007bff; /* Blue background color */
+    -fx-text-fill: white; /* White text color */
+    -fx-pref-width: 80px; /* Preferred width */
+    -fx-pref-height: 30px; /* Preferred height */
+}
+
+.update-button:hover {
+    -fx-background-color: #0056b3; /* Darker blue background color on hover */
+}

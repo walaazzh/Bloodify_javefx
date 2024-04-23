@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="656.0" prefWidth="1062.0" styleClass="anchor-pane" stylesheets="@../../Styles/dashboard.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.bloodify.UserstableController">
+   <children>
+      <VBox layoutY="107.0" prefHeight="551.0" prefWidth="200.0" styleClass="vbox-buttons">
+         <children>
+            <Button mnemonicParsing="false" onAction="#ondashboard" prefHeight="44.0" prefWidth="160.0" styleClass="button-white" text="Dashboard" />
+            <Button mnemonicParsing="false" prefHeight="41.0" prefWidth="160.0" styleClass="button-blue-purple" text="Users" />
+            <Button mnemonicParsing="false" prefHeight="45.0" prefWidth="160.0" styleClass="button-white" text="Appointments" />
+            <Button layoutX="30.0" layoutY="186.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="160.0" styleClass="button-white" text="Events" />
+            <Button layoutX="30.0" layoutY="344.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="160.0" styleClass="button-white" text="button" />
+            <Button layoutX="30.0" layoutY="373.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="160.0" styleClass="button-white" text="Stock" />
+            <Button layoutX="30.0" layoutY="287.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="160.0" styleClass="button-white" text="Reclamations" />
+         </children>
+      </VBox>
+       <Label layoutX="41.0" layoutY="37.0" prefHeight="35.0" prefWidth="106.0" text="Bloodify">
+           <font>
+               <Font name="Arial" size="27.0" />
+           </font>
+       </Label>
+       <TextField layoutX="525.0" layoutY="35.0" prefHeight="39.0" prefWidth="300.0" promptText="search" styleClass="search-field" />
+       <Button fx:id="logoutbtn" layoutX="945.0" layoutY="34.0" mnemonicParsing="false" onAction="#handleLogout" prefHeight="43.0" prefWidth="92.0" styleClass="logout-button" stylesheets="@../../Styles/home.css" text="logout" />
+       <Hyperlink fx:id="settingslink" layoutX="854.0" layoutY="39.0" onAction="#onsettings" prefHeight="34.0" prefWidth="76.0" stylesheets="@../../Styles/home.css" text="Settings" />
+       <Label layoutX="218.0" layoutY="37.0" prefHeight="35.0" prefWidth="168.0" text="Dashboard">
+           <font>
+               <Font name="Arial" size="27.0" />
+           </font>
+       </Label>
+
+       <TableView fx:id="table" layoutX="243.0" layoutY="180.0" prefHeight="434.0" prefWidth="809.0">
+        <columns>
+          <TableColumn fx:id="firstname" minWidth="20.0" prefWidth="143.0" text="First name" />
+          <TableColumn fx:id="lastname" minWidth="20.0" prefWidth="143.0" text="Last name" />
+            <TableColumn fx:id="email" prefWidth="215.0" text="Eamil " />
+            <TableColumn fx:id="role" prefWidth="132.0" text="Role " />
+            <TableColumn fx:id="actions" prefWidth="166.0" text="Actions" />
+        </columns>
+      </TableView>
+      <Label layoutX="281.0" layoutY="132.0" prefHeight="35.0" prefWidth="147.0" styleClass="label-title" text="Users Table: " />
+      <Button fx:id="add" layoutX="937.0" layoutY="131.0" mnemonicParsing="false" onAction="#addon" prefHeight="38.0" prefWidth="92.0" styleClass="button1" text="Add user" />
+   </children>
+</AnchorPane>
