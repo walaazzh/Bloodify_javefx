@@ -1,0 +1,22 @@
+/* Appliquer une bordure rouge à tous les VBox */
+.vbox {
+    -fx-border-color: red;
+    -fx-border-width: 2px;
+    fx-alignment: center;
+
+}
+
+/* Styliser les boutons pour qu'ils soient rouges */
+.button {
+    -fx-background-color: red;
+    -fx-text-fill: white; /* Couleur du texte en blanc pour une meilleure visibilité */
+}
+
+button-bar {
+     -fx-spacing: 5px; /* Ajouter un espacement entre les boutons */
+ }
+
+.button-app{
+    -fx-background-color: blue;
+    -fx-text-fill: white;
+}

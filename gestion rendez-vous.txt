@@ -1,0 +1,28 @@
+
+Table 1: Rendez-vous
+
+
+ID du Rendez-vous (Primary Key): Identifiant unique pour chaque rendez-vous.
+ID de l'Utilisateur (Foreign Key): Identifiant de l'utilisateur qui a réservé le rendez-vous.
+Date et Heure du Rendez-vous: La date et l'heure prévues pour le rendez-vous.
+ID du Centre de Collecte (Foreign Key): Identifiant du centre de collecte où le rendez-vous est prévu.
+Statut du Rendez-vous: Indique si le rendez-vous est confirmé, en attente, annulé, etc.
+Raison de l'Annulation: Si le rendez-vous a été annulé, une raison peut être enregistrée.
+Date et Heure de Création: La date et l'heure auxquelles le rendez-vous a été réservé.
+Date et Heure de Dernière Modification: La date et l'heure de la dernière modification apportée au rendez-vous.
+
+
+
+
+Table 2: Centres de Collecte
+
+ID du Centre (Primary Key): Identifiant unique pour chaque centre de collecte.
+Nom du Centre: Le nom du centre de collecte.
+Adresse: L'adresse physique du centre de collecte.
+Ville: La ville où se trouve le centre de collecte.
+Code Postal: Le code postal de la localisation du centre de collecte.
+Pays: Le pays où se trouve le centre de collecte.
+Coordonnées GPS: Les coordonnées géographiques (latitude et longitude) du centre de collecte.
+Contact Téléphonique: Le numéro de téléphone du centre de collecte.
+Horaires d'Ouverture: Les heures d'ouverture du centre de collecte pour les dons de sang.
+Capacité Maximale de Rendez-vous: Le nombre maximal de rendez-vous pouvant être réservés simultanément au centre de collecte.

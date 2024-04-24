@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.admin">
+
+    <children>
+        <VBox layoutY="107.0" prefHeight="551.0" prefWidth="200.0" styleClass="vbox-buttons">
+            <children>
+                <Button mnemonicParsing="false" onAction="#showDashboard" prefHeight="44.0" prefWidth="160.0" styleClass="button-white" text="Dashboard" />
+                <Button mnemonicParsing="false" prefHeight="41.0" prefWidth="160.0" styleClass="button-white" text="Users" />
+                <Button mnemonicParsing="false" onAction="#getAppointments" prefHeight="45.0" prefWidth="160.0" styleClass="button-blue-purple" stylesheets="@style2/admin.css" text="Appointments" />
+                <Button layoutX="30.0" layoutY="186.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="160.0" styleClass="button-white" text="Events" />
+                <Button layoutX="30.0" layoutY="344.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="160.0" styleClass="button-white" text="button" />
+                <Button layoutX="30.0" layoutY="373.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="160.0" styleClass="button-white" text="Stock" />
+                <Button layoutX="30.0" layoutY="287.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="160.0" styleClass="button-white" text="Reclamations" />
+            </children>
+        </VBox>
+        <HBox alignment="CENTER_RIGHT" layoutX="-6.0" layoutY="-8.0" prefHeight="117.0" prefWidth="1052.0" spacing="10" styleClass="hbox-search">
+            <children>
+                <Label prefHeight="35.0" prefWidth="201.0" stylesheets="@style2/dashboard.css" text="   Bloodify">
+               <styleClass>
+                  <String fx:value="title" />
+                  <String fx:value="title" />
+               </styleClass></Label>
+                <Label prefHeight="35.0" prefWidth="168.0" styleClass="title-label1" stylesheets="@style2/dashboard.css" text="Dashboard" />
+
+                <TextField prefHeight="39.0" prefWidth="300.0" promptText="search" styleClass="hbox-search" />
+
+                <!-- Place the label, hyperlink, and button on the right -->
+                <Label fx:id="userlabel" prefHeight="38.0" prefWidth="120.0" styleClass="user-name-label" />
+                <Hyperlink prefHeight="22.0" prefWidth="76.0" text="Settings" />
+                <Button mnemonicParsing="false" prefHeight="43.0" prefWidth="92.0" styleClass="button-white" text="logout" />
+            </children>
+        </HBox>
+      <Pane layoutX="258.0" layoutY="132.0" prefHeight="462.0" prefWidth="562.0" styleClass="pane-background" stylesheets="@style2/admin.css">
+         <children>
+            <TextField fx:id="nomtxt" layoutX="215.0" layoutY="76.0" prefHeight="38.0" prefWidth="192.0" stylesheets="@style2/admin.css" />
+            <ChoiceBox fx:id="citytxt" layoutX="213.0" layoutY="158.0" prefHeight="38.0" prefWidth="192.0" />
+            <TextField fx:id="codetxt" layoutX="213.0" layoutY="236.0" prefHeight="35.0" prefWidth="192.0" />
+            <TextField fx:id="captextfield" layoutX="213.0" layoutY="307.0" prefHeight="35.0" prefWidth="192.0" />
+            <Button layoutX="247.0" layoutY="380.0" mnemonicParsing="false" onAction="#ajouter" prefHeight="35.0" prefWidth="101.0" styleClass="button-white" stylesheets="@style2/admin.css" text="add">
+               <font>
+                  <Font size="18.0" />
+               </font></Button>
+            <Label layoutX="103.0" layoutY="82.0" text="Name" textFill="#bc0b0b">
+               <font>
+                  <Font size="17.0" />
+               </font></Label>
+            <Label layoutX="103.0" layoutY="164.0" prefHeight="26.0" prefWidth="61.0" text="City" textFill="#a10c0c">
+               <font>
+                  <Font size="17.0" />
+               </font></Label>
+            <Label layoutX="103.0" layoutY="236.0" text="Code postal" textFill="#b91a1a">
+               <font>
+                  <Font size="16.0" />
+               </font></Label>
+            <Label layoutX="104.0" layoutY="312.0" prefHeight="24.0" prefWidth="82.0" text="Capacity" textFill="#961919">
+               <font>
+                  <Font size="17.0" />
+               </font></Label>
+              <Label layoutX="213.0" layoutY="-10.0" prefHeight="62.0" prefWidth="257.0" styleClass="label-title" text="Add collection Center" textFill="#ea0f0f">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Label>
+            <Label fx:id="validationName" layoutX="233.0" layoutY="125.0" textFill="#e40d0d" />
+         </children>
+      </Pane>
+    </children>
+
+</AnchorPane>

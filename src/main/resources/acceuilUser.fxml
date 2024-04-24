@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="566.0" prefWidth="1013.0" styleClass="secondary-color" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.acceuilUser">   <top>
+    <HBox alignment="CENTER_RIGHT" prefHeight="62.0" prefWidth="765.0" spacing="20" styleClass="secondary-color" BorderPane.alignment="CENTER">
+        <children>
+            <Pane prefHeight="72.0" prefWidth="695.0" styleClass="secondary-color">
+                <children>
+                    <Label fx:id="username" layoutX="405.0" layoutY="16.0" prefHeight="26.0" prefWidth="238.0" styleClass="label1" />
+                    <Label layoutX="20.0" layoutY="23.0" prefHeight="17.0" prefWidth="90.0" styleClass="label1" text="Bloodify" />
+                </children>
+            </Pane>
+            <Hyperlink styleClass="hyperlink1" text="Blog" />
+            <Hyperlink styleClass="hyperlink1" text="Report a bug" />
+            <Hyperlink fx:id="settingsbtn" layoutX="705.0" layoutY="10.0" styleClass="hyperlink1" text="Settings" />
+        </children>
+    </HBox>
+</top>
+    <center>
+        <AnchorPane prefHeight="528.0" prefWidth="1052.0" BorderPane.alignment="CENTER">
+         <children>
+            <GridPane fx:id="grid" layoutX="23.0">
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+            </GridPane>
+         </children>
+        </AnchorPane>
+    </center>
+</BorderPane>

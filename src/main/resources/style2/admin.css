@@ -1,0 +1,52 @@
+/* Style pour le bouton */
+.button-white {
+    -fx-background-color: red;
+    -fx-text-fill: white;
+}
+
+/* Style pour le titre */
+.title-label1 {
+    -fx-font-size: 20px;
+    -fx-text-fill: white;
+}
+
+/* Style pour le champ de recherche */
+.hbox-search .text-field {
+    -fx-background-color: #ccc; /* Gris clair pour le fond */
+    -fx-prompt-text-fill: #999; /* Couleur de texte de l'invite */
+}
+
+/* Style pour le label de nom d'utilisateur */
+.user-name-label {
+    -fx-text-fill: white;
+}
+
+/* Style pour le lien hypertexte */
+.hbox-search hyperlink {
+    -fx-text-fill: white;
+}
+
+/* Style pour le bouton de déconnexion */
+.button-white.logout-button {
+    -fx-background-color: red;
+    -fx-text-fill: white;
+}
+
+/* Style pour le fond du pane */
+.pane-background {
+    -fx-background-color: #e6e6e6; /* Gris clair pour le fond */
+}
+/* Style pour le bouton "Appointment" */
+button-blue-purple {
+    -fx-background-color: #6a5acd; /* Blue-purple background color */
+    -fx-text-fill: white; /* White text color */
+    -fx-padding: 10px 1px; /* Add padding to the buttons */
+    -fx-font-size: 16px; /* Increase font size */
+    -fx-pref-height: 30px; /* Set the preferred height */
+}
+
+
+/* Hover effect for the blue-purple buttons */
+.button-blue-purple:hover {
+    -fx-background-color: #483d8b; /* Darker shade of blue-purple on hover */
+}
