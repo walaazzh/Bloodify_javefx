@@ -1,0 +1,137 @@
+@font-face {
+    font-family: 'Rubik';
+    src: url("./Inconsolata/static/Inconsolata-Regular.ttf");
+}
+.anchor-pane-container {
+    -fx-background-color: #DDDDDD; /* Grey background inside */
+    -fx-border-color: #0074e4; /* Royale Blue border color outside */
+    -fx-border-width: 2px; /* Border width */
+    -fx-border-radius: 10px; /* Rounded corners */
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.3), 10, 0, 0, 0), /* Outer shadow */
+    inset dropshadow(three-pass-box, rgba(255,255,255,0.3), 10, 0, 0, 0); /* Inset shadow */
+    -fx-padding: 20px; /* Padding inside the AnchorPane */
+    -fx-background-radius: 10px; /* Apply border radius to the background */
+}
+
+/* Text styling */
+.text {
+    -fx-fill: #09419a; /* Dark blue text color */
+    -fx-font-size: 24px; /* Font size */
+}
+
+/* Labels */
+/*.label {*/
+/*    -fx-text-fill: #333333; !* Dark grey text color *!*/
+/*    -fx-font-size: 14px; !* Font size *!*/
+/*}*/
+
+/* TextFields */
+.text-field {
+    -fx-background-color: #ffffff; /* White background */
+    -fx-border-width: 1px; /* Border width */
+    -fx-border-color: #cccccc; /* Light grey border color */
+    -fx-border-radius: 5px; /* Rounded corners */
+    -fx-prompt-text-fill: #aaaaaa; /* Light grey prompt text color */
+    -fx-font-size: 14px; /* Font size */
+    -fx-font-family: "Rubik", sans-serif;
+}
+
+/* PasswordFields */
+.password-field {
+    -fx-background-color: #ffffff; /* White background */
+    -fx-border-width: 1px; /* Border width */
+    -fx-border-color: #cccccc; /* Light grey border color */
+    -fx-border-radius: 5px; /* Rounded corners */
+    -fx-font-size: 14px; /* Font size */
+    -fx-font-family: "Rubik", sans-serif;
+
+}
+
+/* Button */
+.button {
+    -fx-background-color: #0074e4; /* Royale Blue background */
+    -fx-text-fill: #ffffff; /* White text color */
+    -fx-font-size: 14px; /* Font size */
+    -fx-padding: 10px 20px; /* Padding */
+    -fx-border-width: 0; /* No border */
+    -fx-border-radius: 5px; /* Rounded corners */
+    -fx-cursor: hand; /* Cursor style */
+    -fx-font-family: "Rubik", sans-serif;
+
+}
+
+.button:hover {
+    -fx-background-color: #0056b3; /* Darker shade of blue on hover */
+}
+
+/* Hyperlink */
+.hyperlink {
+    -fx-text-fill: #0074e4; /* Royale Blue text color */
+    -fx-font-size: 14px; /* Font size */
+    -fx-border-color: transparent;
+
+}
+
+.hyperlink:hover {
+    -fx-text-fill: #0056b3; /* Darker shade of blue on hover */
+    -fx-border-color: transparent;
+
+}
+.label1{
+    -fx-font-family: 'Rubik';
+    color: #1C2B33; /* Dark gray color */    font-size: 28px;
+    font-weight: 600;
+    line-height: 1.25;
+    letter-spacing: -0.012em;
+}
+.separator {
+    border: none; /* Remove default border */
+    height: 2px; /* Set height of the separator */
+    border-top: 2px solid #000000; /* Set border style to create a solid line */
+    margin: 20px 0; /* Add margin for spacing */
+    -fx-cursor: default;
+}
+
+/* Import Metropolis font (check if available for import) */
+/* This URL is hypothetical; you'll need the correct path to import Metropolis */
+
+/* Apply to an element, e.g., a label */
+.label {
+    -fx-font-family: 'Rubik';
+    font-weight: 500; /* Medium font weight */
+    font-size: 42px; /* Example size */
+    color: #333; /* Example color */
+}
+.disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+a:focused {
+    -fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;
+}
+.separator {
+    -fx-scale-y: 2.0; /* Makes the separator 2 times thicker */
+}
+.custom-separator {
+    -fx-border-color: black;
+    -fx-border-width: 0 0 2px 0; /* Makes a bottom border that looks like a bolder separator */
+    -fx-pref-height: 2px; /* Preferred height to ensure it looks like a line */
+}
+.text-field-error {
+    -fx-border-color: red;
+    -fx-border-width: 2;
+    /* Optional styles to enhance the error indication */
+}
+.imageView {
+    -fx-cursor: hand;
+}
+.imageView1{
+    -fx-cursor: default;
+}
+.alert-error {
+    -fx-background-color: red;
+    -fx-border-color: red;
+    -fx-text-fill: black;
+}

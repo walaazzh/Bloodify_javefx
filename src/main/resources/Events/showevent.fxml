@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="666.0" prefWidth="1069.0" styleClass="anchor-pane" stylesheets="@../Styles/dashboard.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.bloodify.events.Showevent">
+   <children>
+      <VBox layoutY="107.0" prefHeight="549.0" prefWidth="200.0" styleClass="vbox-buttons">
+         <children>
+            <Button mnemonicParsing="false" onAction="#ondashboard" prefHeight="44.0" prefWidth="160.0" styleClass="button-white" text="Dashboard" />
+            <Button mnemonicParsing="false" onAction="#backtouser" prefHeight="41.0" prefWidth="160.0" styleClass="button-white" text="Users" />
+            <Button mnemonicParsing="false" prefHeight="45.0" prefWidth="160.0" styleClass="button-white" text="Appointments" />
+            <Button layoutX="30.0" layoutY="186.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="160.0" styleClass="button-blue-purple" text="Events" />
+            <Button fx:id="navigatetoCategoriesbtn" layoutX="30.0" layoutY="344.0" mnemonicParsing="false" onAction="#navigatetoCategories" prefHeight="47.0" prefWidth="160.0" styleClass="button-white" text="Event Categories" />
+            <Button layoutX="30.0" layoutY="373.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="160.0" styleClass="button-white" text="Stock" />
+            <Button layoutX="30.0" layoutY="287.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="160.0" styleClass="button-white" text="Reclamations" />
+         </children>
+      </VBox>
+      <Label layoutX="281.0" layoutY="132.0" prefHeight="35.0" prefWidth="147.0" styleClass="label-title" text="Events Table: " />
+      <Button fx:id="navigateToAddButton" layoutX="937.0" layoutY="131.0" mnemonicParsing="false" onAction="#navigatetoadd" prefHeight="38.0" prefWidth="92.0" styleClass="button1" text="Add Event" />
+      <TableView fx:id="eventtable" layoutX="224.0" layoutY="319.0" prefHeight="304.0" prefWidth="816.0">
+         <columns>
+            <TableColumn fx:id="checkboxColumn" prefWidth="23.99997079372406">
+               <graphic>
+                  <CheckBox fx:id="selectAllCheckBox" />
+               </graphic>
+            </TableColumn>
+            <TableColumn fx:id="imageev" minWidth="0.0" prefWidth="102.39996337890625" text="image " />
+            <TableColumn fx:id="nameev" prefWidth="108.79998779296875" text="name" />
+            <TableColumn fx:id="descriptionev" prefWidth="127.199951171875" text="description" />
+            <TableColumn fx:id="organisateurev" prefWidth="95.20001220703125" text="organisateur" />
+            <TableColumn fx:id="contactev" minWidth="0.0" prefWidth="0.0" text="contact" />
+            <TableColumn fx:id="maxparticipantev" prefWidth="116.0" text="max participant" />
+            <TableColumn fx:id="datedebutev" minWidth="0.0" prefWidth="92.0" text="date debut" />
+            <TableColumn fx:id="datefinev" prefWidth="75.2000732421875" text="date fin" />
+            <TableColumn fx:id="statusev" prefWidth="104.0" text="status" />
+            <TableColumn fx:id="categoryev" prefWidth="99.199951171875" text="category" />
+            <TableColumn fx:id="actioncolumn" prefWidth="241.5999755859375" style="-fx-alignment: CENTER;" text="action" />
+         </columns>
+      </TableView>
+      <Pane layoutX="-15.0" prefHeight="106.0" prefWidth="1083.0" style="-fx-background-color: white;">
+         <children>
+            <Label layoutX="40.0" layoutY="36.0" prefHeight="39.0" prefWidth="140.0" styleClass="title-label1" text="Bloodify" />
+            <Hyperlink fx:id="settingslink" layoutX="884.0" layoutY="35.0" onAction="#onsettings" prefHeight="22.0" prefWidth="76.0" text="Settings" />
+            <Button fx:id="logoutbtn" layoutX="960.0" layoutY="31.0" mnemonicParsing="false" onAction="#handleLogout" prefHeight="43.0" prefWidth="92.0" styleClass="button-white" text="logout" />
+            <Label layoutX="488.0" layoutY="37.0" prefHeight="35.0" prefWidth="168.0" styleClass="title-label1" text="Dashboard" />
+         </children>
+      </Pane>
+      <Button fx:id="exporteventsbtn" layoutX="791.0" layoutY="131.0" mnemonicParsing="false" onAction="#exportevents" prefHeight="38.0" prefWidth="134.0" style="-fx-background-color: white; -fx-border-color: #7b68ee;" text="       Export Events" />
+      <ImageView fitHeight="22.0" fitWidth="21.0" layoutX="802.0" layoutY="140.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/telecharger-arrow.png" />
+         </image>
+      </ImageView>
+      <Pane layoutX="206.0" layoutY="176.0" prefHeight="124.0" prefWidth="844.0" style="-fx-border-color: black; -fx-background-color: white;">
+         <children>
+            <TextField fx:id="namefilter" layoutX="25.0" layoutY="14.0" prefHeight="25.0" prefWidth="187.0" promptText="name" />
+            <TextField fx:id="organizefilter" layoutX="25.0" layoutY="51.0" prefHeight="25.0" prefWidth="187.0" promptText="organizer" />
+            <TextField fx:id="statusfilter" layoutX="260.0" layoutY="14.0" prefHeight="25.0" prefWidth="181.0" promptText="status" />
+            <DatePicker fx:id="datedebutfilter" layoutX="499.0" layoutY="14.0" prefHeight="25.0" prefWidth="181.0" promptText="date debut" />
+            <DatePicker fx:id="datefinfilter" layoutX="499.0" layoutY="51.0" prefHeight="25.0" prefWidth="181.0" promptText="date fin" />
+            <Button fx:id="applyfilterbtn" layoutX="710.0" layoutY="14.0" mnemonicParsing="false" onAction="#applyfilter" prefHeight="30.0" prefWidth="107.0" style="-fx-background-color: white; -fx-border-color: blue;" text="    Filter">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <ComboBox fx:id="categoryfilter" layoutX="260.0" layoutY="50.0" prefHeight="25.0" prefWidth="181.0" promptText="category" />
+            <Button layoutX="710.0" layoutY="48.0" mnemonicParsing="false" onAction="#removefilter" prefHeight="31.0" prefWidth="107.0" style="-fx-background-color: white; -fx-border-color: blue;" text="Remove">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Button>
+            <CheckBox fx:id="matchallbtn" layoutX="25.0" layoutY="93.0" mnemonicParsing="false" onAction="#matchall" prefHeight="17.0" prefWidth="142.0" text="Match All">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="matchatleastonebtn" layoutX="226.0" layoutY="93.0" mnemonicParsing="false" onAction="#matchatleastone" prefHeight="17.0" prefWidth="142.0" text="Match at least one">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </CheckBox>
+            <ImageView fitHeight="35.0" fitWidth="30.0" layoutX="717.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../../IdeaProjects/bloodify/src/main/resources/images/symbole-filtre-bleu.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="errorfilter" layoutX="499.0" layoutY="85.0" prefHeight="31.0" prefWidth="320.0" />
+         </children>
+      </Pane>
+      <Button fx:id="refreshev" layoutX="986.0" layoutY="626.0" mnemonicParsing="false" onAction="#refreshevaction" prefHeight="34.0" prefWidth="76.0" style="-fx-border-color: #7b68ee; -fx-background-color: white;" text="Refresh">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="576.0" prefWidth="1110.0" styleClass="secondary-color" stylesheets="@../../Styles/home.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.bloodify.HomeController">   <top>
+      <HBox alignment="CENTER_RIGHT" prefHeight="62.0" prefWidth="765.0" spacing="20" styleClass="secondary-color" BorderPane.alignment="CENTER">
+         <children>
+            <Label prefHeight="30.0" prefWidth="130.0" styleClass="label1" stylesheets="@../../Styles/home.css" text="    Bloodify" />
+            <Pane prefHeight="62.0" prefWidth="578.0" styleClass="secondary-color" />
+            <Hyperlink onAction="#oneventpage" styleClass="hyperlink1" text="Blog" />
+            <Hyperlink styleClass="hyperlink1" text="Report a bug" />
+            <Hyperlink fx:id="settingsbtn" layoutX="705.0" layoutY="10.0" onAction="#onsettings" styleClass="hyperlink1" text="Settings" />
+            <Button fx:id="logoutbtn" mnemonicParsing="false" onAction="#handleLogout" styleClass="logout-button" text="Log out" />
+         </children>
+      </HBox>
+   </top>
+   <center>
+            <ScrollPane layoutX="1.0" layoutY="-1.0" prefHeight="505.0" prefWidth="1110.0">
+                     <content>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="1641.0" prefWidth="1094.0" styleClass="anchor-pane">
+                           <children>
+                              <Text layoutX="73.0" layoutY="242.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="label1" text="Our mission is to bridge the gap between blood" />
+                              <Text layoutX="67.0" layoutY="277.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="label1" text=" donors and recipients, providing a seamless and " />
+                              <Text layoutX="67.0" layoutY="347.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="label1" text=" You can trust us, we provide the best service..." />
+                              <Label layoutX="350.0" layoutY="846.0" styleClass="label1" text="Connect with others and save lives together" />
+                              <Hyperlink layoutX="74.0" layoutY="1382.0" prefHeight="23.0" prefWidth="220.0" styleClass="hyperlink-style" text="Book Schedule : " />
+                               <Text layoutX="82.0" layoutY="1446.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="label2" text="Discover your next adventure with" />
+                               <Text layoutX="79.0" layoutY="1478.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="label2" text=" our easy booking system. Reserve " />
+                               <Text layoutX="82.0" layoutY="1513.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="label2" text="your spot now!" />
+                               <Hyperlink layoutX="410.0" layoutY="1382.0" styleClass="hyperlink-style" text="See Our Events : " />
+                              <Hyperlink layoutX="750.0" layoutY="1382.0" styleClass="hyperlink-style" text="Host Blood : " />
+                              <Text layoutX="418.0" layoutY="1444.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="label2" text="Explore our upcoming events " />
+                              <Text layoutX="413.0" layoutY="1475.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="label2" text=" and find the perfect opportunity" />
+                              <Text layoutX="412.0" layoutY="1510.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="label2" text=" to connect with our community." />
+                              <ImageView fitHeight="505.0" fitWidth="578.0" layoutX="576.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true" styleClass="image-view-image-view">
+                                 <image>
+                                    <Image url="@../../images/blog.png" />
+                                 </image></ImageView>
+                              <Text layoutX="73.0" layoutY="312.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="label1" text="efficient experience for both parties." />
+                              <ImageView fitHeight="189.0" fitWidth="188.0" layoutX="-18.0" layoutY="-27.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../images/iconpage.png" />
+                                 </image>
+                              </ImageView>
+                        <Label layoutX="430.0" layoutY="876.0" text="  through blood donation " />
+                        <ImageView fitHeight="327.0" fitWidth="547.0" layoutX="413.0" layoutY="501.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../images/bloodbag.png" />
+                           </image>
+                        </ImageView>
+                        <Button layoutX="477.0" layoutY="918.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="156.0" text="Donate" />
+                        <Text layoutX="757.0" layoutY="1445.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="label2" text="Make a difference by hosting a " />
+                        <Text layoutX="757.0" layoutY="1476.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="label2" text="blood donation event . Join us in" />
+                        <Text layoutX="752.0" layoutY="1511.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="label2" text=" saving lives today !" />
+                        <Label layoutX="465.0" layoutY="1090.0" prefHeight="45.0" prefWidth="177.0" text="Our other services" />
+                        <ImageView fitHeight="188.0" fitWidth="250.0" layoutX="420.0" layoutY="1200.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../images/istockphoto-1424099631-612x612-modified.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="188.0" fitWidth="300.0" layoutX="66.0" layoutY="1198.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../images/appointment.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="188.0" fitWidth="300.0" layoutX="750.0" layoutY="1199.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../images/blood bags.png" />
+                           </image>
+                        </ImageView>
+                        <Label id="helloLabel" layoutX="77.0" layoutY="136.0" prefHeight="64.0" prefWidth="273.0" styleClass="label4" text="Connecting The Donors...">
+                           <font>
+                              <Font size="20.0" />
+                           </font></Label>
+                           </children>
+                        </AnchorPane>
+
+              </content>
+            </ScrollPane>
+   </center>
+</BorderPane>

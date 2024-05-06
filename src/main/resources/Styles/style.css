@@ -1,0 +1,24 @@
+#helloLabel {
+    -fx-font-family: 'Metropolis';
+    -fx-font-size: 22px;
+}
+#separator1{
+     -fx-background-color: black; /* Color of the separator line */
+     -fx-min-height: 2px; /* Adjust the height of the separator line */
+     -fx-max-height: 2px;
+     -fx-cursor: default; /* Cursor style */
+     -fx-separator-insets: 0; /* Set the insets to zero to remove padding */
+ }
+/* Styles for the blood tube animation */
+
+/* Animation keyframes */
+@keyframes pulse {
+    0% { opacity: 0.3; }
+    50% { opacity: 1; }
+    100% { opacity: 0.3; }
+}
+
+/* Apply animation to the blood tube */
+#tubeBody {
+    animation: pulse 2s infinite alternate;
+}

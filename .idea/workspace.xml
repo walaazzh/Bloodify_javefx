@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="6ab86f72-66cc-4430-95e9-b5648bdb1ab2" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Utils/MyDataBase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Utils/SessionManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/controllers/bloodify/CaptchaController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/controllers/bloodify/DashboardController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/controllers/bloodify/HelloController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/controllers/bloodify/HomeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/controllers/bloodify/LoginController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/controllers/bloodify/PasswordController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/controllers/bloodify/ProfileController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/controllers/bloodify/RegisterController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/controllers/bloodify/ResetPasswordController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/controllers/bloodify/SampleController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/controllers/bloodify/UserManagerController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/controllers/bloodify/UserstableController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/controllers/bloodify/events/Addcategory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/controllers/bloodify/events/Addevent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/controllers/bloodify/events/CategoryCrud.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/controllers/bloodify/events/CheckBoxCell.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/controllers/bloodify/events/CheckBoxHeader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/controllers/bloodify/events/ConfirmationDialog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/controllers/bloodify/events/Eventdetails.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/controllers/bloodify/events/Eventpage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/controllers/bloodify/events/Items.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/controllers/bloodify/events/Myevents.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/controllers/bloodify/events/Showevent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/main/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/models/user/Category.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/models/user/Event.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/models/user/Participation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/models/user/Ticket.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/models/user/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/services/CategoryService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/services/EventService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/services/ParticipationService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/services/TicketService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/services/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Events/addcategory.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Events/addevent.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Events/categoryCrud.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Events/eventdetails.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Events/eventpage.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Events/items.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Events/myevents.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Events/showevent.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Styles/SFCompactDisplay-Regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Styles/event.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Styles/home.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Styles/login.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Styles/profile.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Styles/register.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Styles/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/fxml/bloodify/addedituser.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/fxml/bloodify/captcha.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/fxml/bloodify/forgetpassword.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/fxml/bloodify/passwordreset.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/fxml/bloodify/userstable.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/telecharger-arrow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/log4j2.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Kotlin Class" />
+        <option value="CSS File" />
+        <option value="FxmlFile" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
+  <component name="ProjectId" id="2fDx7fi2UkHGB3kbCsN7C3c2UF6" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/user/IdeaProjects/bloodify&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\user\Desktop\walaa\bloodify\src\main\resources\images" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6ab86f72-66cc-4430-95e9-b5648bdb1ab2" name="Changes" comment="" />
+      <created>1713349302060</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1713349302060</updated>
+      <workItem from="1713349303125" duration="28768000" />
+      <workItem from="1713617342363" duration="105677000" />
+      <workItem from="1714033196299" duration="2942000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

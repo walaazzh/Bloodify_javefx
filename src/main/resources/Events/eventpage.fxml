@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="787.0" prefWidth="994.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.bloodify.events.Eventpage">
+   <children>
+      <HBox alignment="CENTER_RIGHT" prefHeight="56.0" prefWidth="994.0" spacing="20" style="-fx-border-color: #cdcdcd;" styleClass="secondary-color">
+         <children>
+            <Pane prefHeight="56.0" prefWidth="586.0" styleClass="secondary-color">
+               <children>
+                  <Label fx:id="username" layoutX="155.0" layoutY="18.0" prefHeight="26.0" prefWidth="238.0" styleClass="label1" />
+                  <Label layoutY="12.0" prefHeight="17.0" prefWidth="90.0" styleClass="label1" stylesheets="@../Styles/home.css" text="Bloodify" />
+               </children>
+            </Pane>
+            <Hyperlink fx:id="eventpagebtn" onAction="#oneventpage" styleClass="hyperlink1" text="Events" />
+            <Hyperlink styleClass="hyperlink1" text="Report a bug" />
+            <Hyperlink fx:id="settingsbtn" layoutX="705.0" layoutY="10.0" onAction="#onsettings" styleClass="hyperlink1" text="Settings" />
+            <Button fx:id="logoutbtn" mnemonicParsing="false" onAction="#handleLogout" styleClass="logout-button" text="Logout" />
+         </children>
+      </HBox>
+      <ScrollPane fx:id="eventscrollpane" layoutX="6.0" layoutY="321.0" prefHeight="451.0" prefWidth="982.0" style="-fx-background-color: white;" vbarPolicy="ALWAYS" AnchorPane.topAnchor="321.0">
+         <content>
+            <GridPane fx:id="eventgrid" alignment="CENTER" hgap="10" prefHeight="431.0" prefWidth="968.0" style="-fx-background-color: white;" vgap="10">
+               <padding>
+                  <Insets top="10.0" />
+               </padding></GridPane>
+
+         </content>
+         <padding>
+            <Insets bottom="10.0" top="10.0" />
+         </padding>
+      </ScrollPane>
+      <HBox alignment="CENTER" layoutX="2.0" layoutY="277.0" prefHeight="43.0" prefWidth="990.0" spacing="550.0">
+         <children>
+            <Label prefHeight="30.0" prefWidth="194.0" stylesheets="@../Styles/home.css" text="Upcoming Events :" textFill="#7d0000" />
+            <TextField fx:id="findeventsbtn" onAction="#findeventsaction" prefHeight="34.0" prefWidth="184.0" promptText="Search ..." />
+         </children>
+      </HBox>
+      <StackPane layoutX="2.0" layoutY="57.0" prefHeight="219.0" prefWidth="990.0">
+         <children>
+            <ImageView fitHeight="219.0" fitWidth="989.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../images/image.jpeg" />
+               </image>
+            </ImageView>
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Discover Ways to Give Back through Blood Donation Events" textAlignment="CENTER" wrappingWidth="481.2752685546875">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Explore Blood Donation Events and Make a Difference" wrappingWidth="393.43280029296875">
+               <font>
+                  <Font size="16.0" />
+               </font>
+               <StackPane.margin>
+                  <Insets top="100.0" />
+               </StackPane.margin>
+            </Text>
+         </children>
+      </StackPane>
+   </children>
+   <stylesheets>
+      <URL value="@../Styles/event.css" />
+      <URL value="@../Styles/home.css" />
+   </stylesheets>
+</AnchorPane>

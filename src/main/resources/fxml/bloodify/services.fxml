@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="638.0" prefWidth="1109.0" stylesheets="@../../Styles/home.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.bloodify.FrontController">
+  <content>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="1545.0" prefWidth="1095.0" styleClass="frontcolor">
+         <children>
+            <AnchorPane layoutX="48.0" layoutY="45.0" prefHeight="1420.0" prefWidth="1004.0" styleClass="anchor-pane-container1">
+               <children>
+                  <Label layoutX="62.0" layoutY="27.0" styleClass="labelfront" text="Bloodify" />
+                  <ImageView fitHeight="95.0" fitWidth="73.0" layoutX="4.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../images/rsz_password.png" />
+                     </image>
+                  </ImageView>
+                  <Hyperlink fx:id="home" layoutX="296.0" layoutY="35.0" onAction="#onhome" styleClass="hyperlinkfront" text="Home" />
+                  <Button fx:id="signin" layoutX="821.0" layoutY="31.0" mnemonicParsing="false" onAction="#signinon" prefHeight="31.0" prefWidth="74.0" styleClass="buttonfront1" text="Sign in" />
+                  <Button fx:id="signup" layoutX="900.0" layoutY="31.0" mnemonicParsing="false" onAction="#signupon" prefHeight="31.0" prefWidth="74.0" styleClass="buttonfront" text="Sign Up" />
+                  <Hyperlink layoutX="421.0" layoutY="35.0" styleClass="hyperlinkfront" text="Why Donate ?" />
+                  <Hyperlink layoutX="584.0" layoutY="35.0" styleClass="hyperlinkfront" text="Service" />
+                  <AnchorPane layoutX="77.0" layoutY="147.0" prefHeight="293.0" prefWidth="384.0" styleClass="anchor-pane-container1">
+                     <children>
+                        <Text layoutX="43.0" layoutY="208.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="textfront" text="Get through the donation process quickly and efficiently." wrappingWidth="322.6875" />
+                        <Label layoutX="44.0" layoutY="149.0" styleClass="labelfront" text="Fast Donation Process" />
+                        <ImageView fitHeight="228.0" fitWidth="199.0" layoutX="84.0" layoutY="-13.0" pickOnBounds="true" preserveRatio="true" rotate="6.3">
+                           <image>
+                              <Image url="@../../images/Design%20sans%20titre%20(20).png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="524.0" layoutY="149.0" prefHeight="290.0" prefWidth="387.0" styleClass="anchor-pane-container1">
+                     <children>
+                        <Text layoutX="46.0" layoutY="210.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="textfront" text="Ensuring the safety and security of the blood collection process." wrappingWidth="322.6875" />
+                        <Label layoutX="46.0" layoutY="150.0" styleClass="labelfront" text="Secure Blood Collection" />
+                        <ImageView fitHeight="136.0" fitWidth="122.0" layoutX="139.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../images/Design%20sans%20titre%20(25).png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="75.0" layoutY="461.0" prefHeight="301.0" prefWidth="384.0" styleClass="anchor-pane-container1">
+                     <children>
+                        <Text layoutX="50.0" layoutY="205.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="textfront" text="Conveniently schedule your blood donation appointments." wrappingWidth="322.6875" />
+                        <Label layoutX="47.0" layoutY="148.0" prefHeight="39.0" prefWidth="247.0" styleClass="labelfront" text="Easy Appointment " />
+                        <ImageView fitHeight="180.0" fitWidth="178.0" layoutX="110.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../images/Design%20sans%20titre%20(27).png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="524.0" layoutY="462.0" prefHeight="301.0" prefWidth="384.0" styleClass="anchor-pane-container1">
+                     <children>
+                        <Text layoutX="43.0" layoutY="208.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="textfront" text="Receive support and guidance from our friendly staff throughout the donation process. " wrappingWidth="322.6875" />
+                        <Label layoutX="44.0" layoutY="149.0" styleClass="labelfront" text="Friendly Staff Assistance" />
+                        <ImageView fitHeight="143.0" fitWidth="156.0" layoutX="128.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../images/Design%20sans%20titre%20(28).png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="79.0" layoutY="783.0" prefHeight="312.0" prefWidth="381.0" styleClass="anchor-pane-container1">
+                     <children>
+                        <Text layoutX="43.0" layoutY="190.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="textfront" text="Rapid and precise testing procedures to ensure the quality of donated blood." wrappingWidth="312.6875" />
+                        <Label layoutX="43.0" layoutY="136.0" prefHeight="39.0" prefWidth="294.0" styleClass="labelfront" text="Efficient Blood Testing" />
+                        <ImageView fitHeight="124.0" fitWidth="144.0" layoutX="137.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../images/Design%20sans%20titre%20(9).png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="521.0" layoutY="783.0" prefHeight="313.0" prefWidth="389.0" styleClass="anchor-pane-container1">
+                     <children>
+                        <Text layoutX="28.0" layoutY="212.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="textfront" text="Providing a comfortable and welcoming atmosphere for donors." wrappingWidth="312.6875" />
+                        <Label layoutX="28.0" layoutY="138.0" prefHeight="40.0" prefWidth="338.0" styleClass="labelfront" text="Comfortable Environment" />
+                        <ImageView fitHeight="162.0" fitWidth="167.0" layoutX="120.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../images/Design%20sans%20titre%20(26).png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="238.0" layoutY="1121.0" prefHeight="340.0" prefWidth="537.0" styleClass="anchor-pane-container1">
+                     <children>
+                        <Text layoutX="130.0" layoutY="220.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="textfront" text="Supporting emergency medical services with readily available blood supplies." wrappingWidth="312.6875" />
+                        <Label layoutX="130.0" layoutY="159.0" prefHeight="39.0" prefWidth="269.0" styleClass="labelfront" text="Emergency Response" />
+                        <ImageView fitHeight="227.0" fitWidth="294.0" layoutX="151.0" layoutY="-20.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../images/Design%20sans%20titre%20(18).png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+         </children></AnchorPane>
+  </content>
+</ScrollPane>

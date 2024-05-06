@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="595.0" prefWidth="800.0" stylesheets="@../../Styles/home.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.bloodify.UserManagerController">
+   <children>
+      <ImageView fitHeight="217.0" fitWidth="236.0" layoutX="336.0" layoutY="-18.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/iconpage.png" />
+         </image>
+      </ImageView>
+      <Hyperlink fx:id="listlink" layoutX="14.0" layoutY="14.0" onAction="#onlist" styleClass="hyperlink1" text="Back to list">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Hyperlink>
+      <Label layoutX="195.0" layoutY="176.0" text="First name :" />
+      <Label layoutX="192.0" layoutY="228.0" text="Last name :" />
+      <Label layoutX="192.0" layoutY="276.0" text="Email :" />
+      <Label layoutX="178.0" layoutY="339.0" text="Password  :" />
+      <Label layoutX="122.0" layoutY="395.0" text="Confirm password :" />
+      <TextField fx:id="first_name" layoutX="332.0" layoutY="163.0" prefHeight="43.0" prefWidth="217.0" styleClass="text-input1" />
+      <TextField fx:id="last_name" layoutX="332.0" layoutY="221.0" prefHeight="43.0" prefWidth="217.0" styleClass="text-input1" />
+      <TextField fx:id="email" layoutX="332.0" layoutY="276.0" prefHeight="43.0" prefWidth="217.0" styleClass="text-input1" />
+      <PasswordField fx:id="password" layoutX="332.0" layoutY="332.0" prefHeight="43.0" prefWidth="217.0" styleClass="text-input1" />
+      <PasswordField fx:id="confirm_password" layoutX="332.0" layoutY="388.0" prefHeight="43.0" prefWidth="217.0" styleClass="text-input1" />
+      <Button fx:id="savebtn" layoutX="345.0" layoutY="506.0" mnemonicParsing="false" onAction="#onSave" prefHeight="50.0" prefWidth="174.0" text="Save" />
+      <RadioButton fx:id="radioButton1" layoutX="340.0" layoutY="456.0" mnemonicParsing="false" styleClass="label" text="Admin">
+         <toggleGroup>
+            <ToggleGroup fx:id="role" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="radioButton2" layoutX="449.0" layoutY="456.0" mnemonicParsing="false" selected="true" styleClass="label" text="User" toggleGroup="$role" />
+   </children>
+</AnchorPane>

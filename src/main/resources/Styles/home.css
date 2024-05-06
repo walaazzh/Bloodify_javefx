@@ -1,0 +1,448 @@
+@font-face {
+    font-family: 'Rubik';
+    src: url("./Inconsolata/static/Inconsolata-Regular.ttf");
+}
+@font-face {
+    font-family: 'SFCompact';
+    src: url("./fonts/sfwin-master/SFCompact/TrueType/SFCompactDisplay-Regular.ttf");
+}
+.root {
+    -fx-base: #e0e0e0;
+    -fx-background-color: #ffffff;
+}
+.label {
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-font-family: 'SFCompact';
+    font-weight: 500; /* Medium font weight */
+    color: #1C2B33; /* Dark gray color */
+}
+.button {
+    -fx-background-color: #1d65c1;
+    -fx-background-radius: 50;
+    -fx-text-fill: #ffffff;
+    -fx-font-weight: bold;
+    -fx-padding: 5 10 5 10;
+    -fx-cursor: hand ;
+    -fx-font-size: 14px; /* Font size */
+
+}
+.button:hover {
+    -fx-background-color: #0056b3;
+}
+.pane {
+    -fx-background-color: #f5f5f5;
+    -fx-background-radius: 10;
+    -fx-border-color: #FF0000;
+    -fx-border-radius: 10;
+    -fx-padding: 10;
+    -fx-min-width: 200px;
+    -fx-min-height: 200px;
+    -fx-max-width: 32px;
+    -fx-max-height: 41px;
+}
+.separator {
+    -fx-border-color: #FF0000;
+}
+.hbox {
+    -fx-background-color: #FF0000;
+    -fx-padding: 10;
+}
+.top-label {
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #ffffff;
+}.primary-color {
+     -fx-background-color: #FF0000; /* Royale Blue */
+ }
+.secondary-color {
+    -fx-background-color: #f5f3f7; /* Light Grey */
+}
+.label1 {
+    -fx-font-family: 'SFCompact';
+    /* Additional styles for your labels */
+    font-weight: 500; /* Medium font weight */
+    color: #1C2B33; /* Dark gray color */
+    -fx-font-size: 20px;
+}
+.text-style {
+    -fx-font-family: 'Rubik';
+    font-weight: 500; /* Medium font weight */
+    color: #1C2B33; /* Dark gray color */
+    -fx-font-size: 14.5px; /* Smaller font size */
+}
+.hyperlink-style {
+    -fx-font-family: 'Rubik';
+    /* Additional styles for your hyperlink */
+    font-weight: 500; /* Medium font weight */
+    -fx-text-fill: #1C2B33; /* Dark gray color */
+    -fx-font-size: 25px; /* Font size */
+    -fx-underline: false; /* Disable underline */
+}
+.label2 {
+    -fx-font-family: 'Rubik';
+    /* Additional styles for your labels */
+    font-weight: 500; /* Medium font weight */
+    color: #1C2B33; /* Dark gray color */
+    -fx-font-size: 17px;
+}
+.anchor-pane {
+    -fx-background-color: #ffffff; /* Grey background inside */
+}
+.image-view-image-view {
+    -fx-background-radius: 20px; /* Adjust the value to change the roundness */
+}
+.rounded-image-container {
+    -fx-background-radius: 15; /* Adjust the radius as needed */
+    -fx-background-color: transparent; /* Or any color */
+    -fx-border-color: #1C2B33; /* Optional: Border color */
+    -fx-border-width: 2; /* Optional: Border width */
+    -fx-border-radius: 15; /* Ensure this matches the background radius for a consistent look */
+}
+.hyperlink1 {
+    -fx-font-family: 'Rubik';
+    -fx-font-size: 15px; /* Adjust font size */
+    -fx-underline: false; /* Assuming you want to remove the underline based on previous requests */
+    -fx-text-fill: #1C2B33; /* Dark gray color */
+    -fx-border-color: transparent;
+    -fx-font-weight: bold; /* Bold text */
+}
+.hyperlink1:pressed {
+    -fx-focus-color: transparent; /* Remove focus outline when pressed */
+    -fx-border-color: transparent;
+}
+.hyperlink:pressed {
+    -fx-focus-color: transparent; /* Remove focus outline when pressed */
+    -fx-border-color: transparent;
+}
+.button1 {
+    -fx-background-color: white;
+    -fx-background-radius: 50;
+    -fx-text-fill: #ffffff;
+    -fx-font-weight: bold;
+    -fx-padding: 5 10 5 10;
+}
+.button1:hover {
+        -fx-background-color: #f2f2f2; /* Light gray */
+        -fx-text-fill: #3c78dc; /* Darker shade of Google blue */
+        -fx-cursor: hand;
+}
+.imageView {
+    -fx-cursor: hand;
+}
+.imageView1{
+    -fx-cursor: default;
+}
+.logout-button {
+    -fx-background-color: #CCCCCC; /* Light gray background */
+    -fx-text-fill: #1C2B33; /* Dark green text */
+    -fx-font-size: 14px;
+    -fx-padding: 8px 16px; /* Padding for the button */
+    -fx-border-radius: 4px; /* Rounded corners */
+}
+
+.logout-button:hover {
+    -fx-background-color: #BBBBBB; /* Light gray background on hover */
+}
+.text-input1 {
+    -fx-font-size: 13px;
+    -fx-border-color: #1C2B33;
+    -fx-border-width: 2px;
+    -fx-border-radius: 5px;
+    -fx-alignment: center;
+}
+.text-input1:focused {
+    -fx-border-color: royalblue;
+    -fx-border-width: 1px;
+    -fx-border-radius: 5px;
+}
+.text-field-error{
+    -fx-font-size: 13px;
+    -fx-border-color: red;
+    -fx-border-width: 2px; /* Adjust border size as needed */
+    -fx-border-radius: 5px; /* Adjust border radius as needed */
+}
+.progress-bar {
+    -fx-background-color: transparent; /* Make the background transparent */
+    -fx-padding: 0.25em; /* Padding around the progress bar */
+    -fx-pref-height: 20px; /* Preferred height of the progress bar */ /* Shadow effect */
+}
+.progress-bar .bar .background {
+    -fx-background-color: transparent;
+}
+.progress-bar-weak .bar {
+    -fx-accent: red; /* Red color for weak password */
+}
+.progress-bar-medium .bar {
+    -fx-accent: #ffff00; /* Yellow color for medium password */
+}
+.progress-bar-good .bar {
+    -fx-accent: #82ee82; /* Yellow color for medium password */
+}
+.progress-bar-strong .bar {
+    -fx-accent: green; /* Green color for strong password */
+}
+/*.label4{*/
+/*    -fx-font-size: 20px;*/
+/*    -fx-font-weight: bold;*/
+/*    -fx-font-family: 'SFCompact';*/
+/*    font-weight: 500; !* Medium font weight *!*/
+/*    color: #1C2B33; !* Dark gray color *!*/
+/*}*/
+.frosted-background {
+    -fx-background-color: rgba(255, 255, 255, 0.7); /* Adjust the RGBA values for the desired opacity */
+    -fx-background-radius: 10; /* Adjust the radius for rounded corners */
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 10, 0.5, 0, 0); /* Apply a drop shadow effect */
+    -fx-padding: 10px 20px; /* Add padding to the edges */
+    -fx-border-radius: 10;
+
+}
+.text-input3 {
+    -fx-background-color: rgba(255, 255, 255, 0.5); /* Adjust the RGBA values for the desired opacity */
+    -fx-background-radius: 5px; /* Adjust the radius for rounded corners */
+    -fx-border-color: transparent; /* Hide the border */
+    -fx-padding: 5px; /* Add padding to the edges */
+    -fx-alignment: center; /* Center the text horizontally */
+    -fx-font-size: 14px; /* Set input text font size */
+}
+.button2{
+    -fx-background-color: #4CAF50; /* Set button background color */
+    -fx-text-fill: white; /* Set button text color */
+    -fx-background-radius: 5px; /* Adjust the radius for rounded corners */
+    -fx-padding: 10px 20px; /* Add padding to the edges */
+}
+.button2:hover {
+    -fx-background-color: #45a049; /* Change button background color on hover */
+}
+.labelpassword {
+    -fx-text-fill: #333; /* Set label text color */
+    -fx-font-size: 20px; /* Set label font size */
+}
+.password-label {
+    -fx-text-fill: #333; /* Set password label text color */
+    -fx-font-size: 14px; /* Set password label font size */
+    -fx-font-weight: bold; /* Make password label text bold */
+}
+.imageView1 {
+    -fx-background-radius: 50%; /* Set the radius to 50% to create a circle */
+}
+.error-container {
+    -fx-background-color: #ffcccc; /* Soft red background color */
+    -fx-background-radius: 10px; /* Rounded corners for background */
+    -fx-border-color: #ff7f7f; /* Lighter red border color */
+    -fx-border-width: 2px; /* Border width */
+    -fx-border-radius: 10px; /* Rounded corners for border */
+    -fx-padding: 10px; /* Padding */
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.3), 10, 0, 0, 0), /* Outer shadow */
+    inset dropshadow(three-pass-box, rgba(255,255,255,0.3), 10, 0, 0, 0);}
+.error-message {
+    -fx-text-fill: #cc3333; /* Set text color to a slightly darker red */
+    -fx-font-size: 14px; /* Set font size */
+    -fx-font-weight: bold; /* Set font weight to bold */
+}
+.rotate-instruction-label {
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #333333; /* Dark gray text color */
+    -fx-alignment: center; /* Center the text horizontally */
+}
+.picture-anchor {
+    -fx-background-color: linear-gradient(to bottom, #f0f0f0, #ffffff); /* Gradient from light gray to white */
+}
+.picture-anchor {
+    -fx-background-color: linear-gradient(to bottom, #f0f0f0, #ffffff); /* Gradient from light gray to white */
+    -fx-background-opacity: 0.8; /* Adjust opacity as needed */
+    -fx-background-radius: 10; /* Adjust the radius for rounded corners */
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 10, 0.5, 0, 0); /* Apply a drop shadow effect */
+    -fx-padding: 20px;
+    -fx-border-radius: 10;
+}
+.button5 {
+    -fx-background-color: #4CAF50; /* Green background color */
+    -fx-text-fill: white; /* White text color */
+    -fx-font-size: 14px; /* Font size */
+    -fx-padding: 10px 20px; /* Padding */
+    -fx-border-radius: 5px; /* Rounded corners */
+    -fx-border-color: transparent; /* Transparent border color */
+    -fx-cursor: hand; /* Cursor style */
+}
+.button5:hover {
+    -fx-background-color: #45a049; /* Darker green background color */
+}
+.button5:pressed {
+    -fx-background-color: #3e8e41; /* Even darker green background color */
+}
+.recaptcha-button1 {
+    -fx-background-color: #dcdcdc; /* Background color */
+    -fx-text-fill: #444; /* Text color */
+    -fx-border-color: #999; /* Border color */
+    -fx-border-radius: 20px; /* Border radius */
+    -fx-padding: 8px 16px; /* Padding */
+    -fx-font-family: "Arial", sans-serif; /* Font family */
+    -fx-font-size: 14px; /* Font size */
+}
+.button20{
+    -fx-background-color: #dcdcdc; /* Background color */
+    -fx-text-fill: #444; /* Text color */
+    -fx-background-radius: 5px; /* Adjust the radius for rounded corners */
+    -fx-padding: 10px 20px; /* Add padding to the edges */
+    -fx-border-color: #999; /* Border color */
+    -fx-border-radius: 5px; /* Border radius */
+}
+.recaptcha-button1:hover {
+    -fx-background-color: #c0c0c0; /* Background color on hover */
+    -fx-border-color: #888; /* Border color on hover */
+}
+.button20:hover {
+    -fx-background-color: #c0c0c0; /* Background color on hover */
+    -fx-border-color: #888; /* Border color on hover */}
+.anchor1 {
+    -fx-background-color: #D2D2D2; /* Grey background inside */}
+.scroll-pane {
+    -fx-background-color: transparent; /* Makes the ScrollPane background transparent */
+}
+.scroll-bar {
+    -fx-background-color: transparent; /* Makes the scrollbar track transparent */
+    -fx-opacity: 0.7; /* Adjusts the opacity of the scrollbar when not hovered */
+}
+.scroll-bar:hover {
+    -fx-opacity: 1.0; /* Full opacity when hovered */
+}
+.scroll-bar:vertical .thumb {
+    -fx-background-color: lightgrey; /* Lighter grey color for the vertical scrollbar thumb */
+    -fx-background-insets: 0;
+    -fx-background-radius: 5px; /* Rounded corners for the thumb */
+    -fx-min-height: 10px; /* Minimum height for vertical thumb, adjust if necessary */
+    -fx-padding: 0.5em 0.333333em 0.5em 0.333333em; /* Padding around the thumb */
+}
+.scroll-bar:horizontal .thumb {
+    -fx-background-color: lightgrey; /* Lighter grey color for the horizontal scrollbar thumb */
+    -fx-background-insets: 0;
+    -fx-background-radius: 5px; /* Rounded corners for the thumb */
+    -fx-min-width: 10px; /* Minimum width for horizontal thumb, adjust if necessary */
+    -fx-padding: 0.333333em 0.5em 0.333333em 0.5em; /* Padding around the thumb */
+}
+.scroll-bar .increment-button,
+.scroll-bar .decrement-button {
+    -fx-background-color: transparent;
+    -fx-padding: 0;
+    -fx-min-width: 0;
+    -fx-min-height: 0;
+    -fx-pref-width: 0;
+    -fx-pref-height: 0;
+    -fx-max-width: 0;
+    -fx-max-height: 0;
+    -fx-opacity: 0;
+}
+.anchor-pane-container1{
+    -fx-background-color: #FFFFFF; /* Grey background inside */
+    -fx-border-color: #FFFFFF; /* Royale Blue border color outside */
+    -fx-border-width: 6px; /* Border width */
+    -fx-border-radius: 10px; /* Rounded corners */
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.3), 10, 0, 0, 0), /* Outer shadow */
+    inset dropshadow(three-pass-box, rgba(255,255,255,0.3), 10, 0, 0, 0); /* Inset shadow */
+    -fx-background-radius: 10px; /* Apply border radius to the background */
+    -fx-cursor: default;
+}
+.frontcolor {
+    -fx-background-color: #eaf1fb; /* Light Grey */
+}
+.labelfront {
+    -fx-text-fill: #2e2ca9; /* Dark purple color */
+    -fx-font-size: 27px; /* Larger font size */
+    -fx-alignment: center; /* Align the label to the left */
+    -fx-font-family: 'Rubik';
+}
+.hyperlinkfront {
+    -fx-font-family: 'Rubik';
+    /* Additional styles for your hyperlink */
+    -fx-font-weight: bold;
+    -fx-text-fill: #2e2ca9; /* Dark gray color */
+    -fx-font-size: 14px; /* Font size */
+    -fx-underline: false; /* Disable underline */
+    -fx-border-color: transparent;
+}
+.buttonfront {
+    -fx-background-color:#e9231b;
+    -fx-text-fill: white; /* Change text color to white */
+    -fx-font-size: 14px; /* Adjust font size as needed */
+    -fx-font-family: "Arial"; /* Change font family as needed */
+    -fx-border-radius: 10px; /* Adjust border radius as needed */
+    -fx-background-radius: 10px; /* Adjust background radius as needed */
+}
+
+.buttonfront:hover {
+    -fx-background-color: #981a0c;
+}
+
+.buttonfront1 {
+    -fx-background-color:white;
+    -fx-text-fill: #2e2ca9; /* Change text color to white */
+    -fx-font-size: 14px; /* Adjust font size as needed */
+    -fx-font-family: "Arial"; /* Change font family as needed */
+    -fx-border-radius: 10px; /* Adjust border radius as needed */
+    -fx-background-radius: 10px; /* Adjust background radius as needed */
+}
+
+.buttonfront1:hover {
+    -fx-background-color:#f0f0f0
+}
+.labelfront1 {
+    -fx-text-fill: #2e2ca9; /* Dark purple color */
+    -fx-font-size: 40px; /* Larger font size */
+    -fx-alignment: center; /* Align the label to the left */
+    -fx-font-family: 'Rubik';
+}
+.textfront {
+    -fx-text-fill: #2e2ca9; /* Dark purple color */
+    -fx-font-size: 20px; /* Larger font size */
+    -fx-alignment: center; /* Align the label to the left */
+    -fx-font-family: 'Rubik';
+}
+
+.scroll-pane1 .scroll-bar:vertical {
+    -fx-background-color: transparent; /* Vertical scrollbar background */
+}
+
+.scroll-pane1 .scroll-bar:horizontal {
+    -fx-background-color: transparent; /* Horizontal scrollbar background */
+}
+
+.scroll-pane1 .scroll-bar:vertical .thumb {
+    -fx-background-color: #ccc; /* Vertical scrollbar thumb color */
+}
+
+.scroll-pane1 .scroll-bar:horizontal .thumb {
+    -fx-background-color: #ccc; /* Horizontal scrollbar thumb color */
+}
+
+.scroll-pane1 .scroll-bar:vertical .increment-arrow,
+.scroll-pane1.scroll-bar:vertical .decrement-arrow,
+.scroll-pane1 .scroll-bar:horizontal .increment-arrow,
+.scroll-pane1 .scroll-bar:horizontal .decrement-arrow {
+    -fx-background-color: transparent; /* Increment and decrement arrow color */
+}
+
+.scroll-pane1 .scroll-bar:vertical .thumb:hover,
+.scroll-pane1 .scroll-bar:horizontal .thumb:hover {
+    -fx-background-color: #ccc; /* Thumb color on hover */
+}
+.buttonfront2 {
+    -fx-background-color: lightgrey;
+    -fx-text-fill: #2e2ca9; /* Change text color to white */
+    -fx-font-size: 14px; /* Adjust font size as needed */
+    -fx-font-family: "Arial"; /* Change font family as needed */
+    -fx-border-radius: 10px; /* Adjust border radius as needed */
+    -fx-background-radius: 10px; /* Adjust background radius as needed */
+}
+
+.buttonfront2:hover {
+    -fx-background-color:#f0f0f0
+}
+
+.bloodify {
+    -fx-text-fill: #a61424; /* Dark purple color */
+    -fx-font-size: 27px; /* Larger font size */
+    -fx-alignment: center; /* Align the label to the left */
+    -fx-font-family: 'Rubik';
+}

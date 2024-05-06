@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="640.0" prefWidth="949.0" styleClass="secondary-color" stylesheets="@../../Styles/register.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.bloodify.LoginController">
+      <AnchorPane layoutX="109.0" layoutY="49.0" prefHeight="498.0" prefWidth="731.0" styleClass="anchor-pane-container">
+            <Text layoutX="431.0" layoutY="101.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="anchor-pane-labels" text="Log in" textAlignment="CENTER" wrappingWidth="143.0">
+               <font>
+                  <Font name="Sylfaen" size="48.0" />
+               </font>
+            </Text>
+            <Text layoutX="438.0" layoutY="142.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="label" text="Email :" />
+            <Text layoutX="438.0" layoutY="205.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="label" text="Password :" />
+            <TextField fx:id="emailfield" layoutX="436.0" layoutY="152.0" prefHeight="31.0" prefWidth="197.0" promptText="Enter your email" />
+            <PasswordField fx:id="passwordfield" layoutX="436.0" layoutY="211.0" prefHeight="31.0" prefWidth="197.0" promptText="Enter your password" />
+            <Hyperlink fx:id="forget_password" layoutX="437.0" layoutY="245.0" onAction="#resetpassword" prefHeight="22.0" prefWidth="126.0" styleClass="hyperlink-signin" text="Forgot password ?" />
+            <Hyperlink fx:id="create_account" layoutX="535.0" layoutY="350.0" onAction="#handleCreateAccountClick" prefHeight="19.0" prefWidth="126.0" styleClass="hyperlink-signin" text="Create an account " />
+            <Button layoutX="427.0" layoutY="402.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="222.0" styleClass="googleSignInButton" text="Continue with Google" textAlignment="JUSTIFY">
+         <graphic>
+                  <ImageView fitHeight="23.0" fitWidth="19.0" pickOnBounds="true" preserveRatio="true">
+                        <Image url="@../../images/google2.png" />
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+                  </ImageView>
+         </graphic></Button>
+            <ImageView fitHeight="388.0" fitWidth="383.0" layoutX="25.0" layoutY="85.0" pickOnBounds="true" preserveRatio="true" styleClass="imageView1">
+                  <Image url="@../../images/register.png" />
+            </ImageView>
+            <TextField fx:id="showpassword" layoutX="436.0" layoutY="211.0" prefHeight="31.0" prefWidth="197.0" />
+            <ImageView fx:id="image" fitHeight="19.0" fitWidth="18.0" layoutX="605.0" layoutY="220.0" onMouseClicked="#changeImage" pickOnBounds="true" preserveRatio="true" styleClass="imageView">
+                  <Image url="@../../images/visible.png" />
+            </ImageView>
+            <Button alignment="TOP_CENTER" contentDisplay="CENTER" defaultButton="true" layoutX="437.0" layoutY="304.0" mnemonicParsing="false" onAction="#onSubmitClick" prefHeight="40.0" prefWidth="197.0" styleClass="button-register" text="Log in" textAlignment="CENTER" textFill="#0051ff" />
+            <Text layoutX="438.0" layoutY="292.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="label" text="Remember me :" />
+            <CheckBox fx:id="rememberMeCheckbox" layoutX="547.0" layoutY="279.0" mnemonicParsing="false" prefHeight="16.0" prefWidth="18.0" />
+      <Button layoutX="427.0" layoutY="448.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="222.0" styleClass="fbSignInButton" text="Continue with Facebook" textAlignment="JUSTIFY">
+         <graphic>
+            <ImageView fitHeight="23.0" fitWidth="19.0" pickOnBounds="true" preserveRatio="true">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <image>
+                  <Image url="@../../images/facebook_f_2.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Text layoutX="416.0" layoutY="369.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="label" text="New to Bloodify ?" />
+      <Line endX="140.0" layoutX="543.0" layoutY="385.0" startX="-157.0" strokeWidth="2.0" />
+         <cursor>
+            <Cursor fx:constant="S_RESIZE" />
+         </cursor>
+      <stylesheets>
+         <URL value="@../../Styles/profile.css" />
+         <URL value="@../../Styles/register.css" />
+      </stylesheets>
+      </AnchorPane>
+
+</AnchorPane>

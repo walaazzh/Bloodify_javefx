@@ -1,0 +1,411 @@
+@font-face {
+    font-family: 'Metropolice';
+    src: url("./Metropolis-Bold.ttf");
+}
+.button-blue-purple {
+    -fx-background-color: #5c5eee; /* Lighter blue-purple background color */
+    -fx-text-fill: white; /* White text color */
+    -fx-padding: 10px 1px; /* Add padding to the buttons */
+    -fx-font-size: 16px; /* Increase font size */
+    -fx-pref-height: 30px; /* Set the preferred height */
+    -fx-cursor: hand;
+    -fx-border-width: 0; /* No border */
+    -fx-border-radius: 12px; /* Rounded corners */
+    -fx-background-radius: 12px; /* Rounded corners */
+    -fx-font-weight: bold; /* Bold font weight */
+
+}
+.button-blue-purple:hover {
+    -fx-background-color: #6666ff; /* Darker shade of blue-purple on hover */
+}
+.button-white {
+    -fx-background-color: white; /* White background color */
+    -fx-text-fill: #999; /* Black text color */
+    /*-fx-font-size: 17px; !* Font size *!*/
+    -fx-padding: 10px 1px; /* Add padding to the buttons */
+    -fx-font-size: 16px; /* Increase font size */
+    -fx-pref-height: 30px;
+    -fx-cursor: hand ;
+    -fx-border-radius: 11px; /* Rounded corners */
+    -fx-background-radius: 12px; /* Rounded corners */
+    -fx-font-weight: bold; /* Bold font weight */
+}
+.button-white:hover {
+    -fx-background-color: #f0f0f0; /* Light gray background color */
+}
+.anchor-pane {
+    -fx-background-color: #ffffff; /* Light grey background color */
+}
+.anchor-pane {
+    -fx-background-color: rgba(255, 255, 255, 0.8); /* Lighter grey background color */
+}
+.vbox-buttons {
+    -fx-background-color: #ffffff; /* Light gray background color */
+    -fx-padding: 10px 1px; /* Add padding to the buttons */
+    -fx-spacing: 10px; /* Add space between the buttons */
+    -fx-alignment: top_center; /* Align the buttons to the top center */
+    -fx-font-family: 'Rubik';
+    -fx-border-radius: 15px; /* Rounded corners */
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 10, 0, 0, 5);
+}
+.hbox-search {
+    -fx-alignment: center; /* Align items to the center */
+    -fx-padding: 12px 1px; /* Add padding to the buttons */
+    -fx-border-width: 1px; /* Border width */
+    -fx-border-radius: 15px; /* Border radius */
+    -fx-background-radius:15px;
+    -fx-background-color: white; /* White background color */
+    -fx-font-family: 'Rubik';
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 10, 0, 0, 5);
+
+
+
+}
+.text-field {
+    -fx-pref-width: 300px; /* Set preferred width */
+    -fx-background-color: #f0f0f0; /* White background color */
+    -fx-font-family: 'Rubik';
+
+}
+.vbox {
+    -fx-background-color: white; /* White background color */
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 10, 0, 0, 5); /* Drop shadow effect */
+}
+
+.hbox {
+    -fx-background-color: white; /* White background color */
+}
+.table-view {
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.3), 10, 0, 0, 0), /* Outer shadow */
+    inset dropshadow(three-pass-box, rgba(255,255,255,0.3), 10, 0, 0, 0);
+}
+
+.table-column .label {
+    -fx-font-size: 14px; /* Font size for column headers */
+    -fx-font-weight: bold; /* Bold font weight */
+    -fx-text-fill: #111111; /* Dark color for text */
+    -fx-font-family: 'Rubik';
+    -fx-padding: 8px; /* Add padding for better spacing */
+    -fx-alignment: center; /* Center alignment for header text */
+}
+
+.table-cell {
+    -fx-font-size: 14px; /* Font size for cell content */
+    -fx-text-fill: #111111; /* Dark gray text color */
+    -fx-font-family: 'Rubik';
+    -fx-padding: 8px; /* Add padding for better spacing */
+    -fx-alignment: center; /* Center alignment for cell content */
+}
+
+.table-row-cell:hover {
+    -fx-background-color: #eaeaea; /* Lighter gray background color on hover */
+}
+
+.table-row-cell:selected {
+    -fx-background-color: #e0e0e0; /* Lighter blue color for selected item */
+    -fx-text-fill: #111111; /* Dark text color for selected item */
+}
+
+/* Scrollbar styling for both TableView and ScrollPane */
+.scroll-bar {
+    -fx-background-color: transparent; /* Makes the scrollbar track transparent */
+    -fx-opacity: 0.7; /* Adjusts the opacity of the scrollbar when not hovered */
+}
+
+.scroll-bar:hover {
+    -fx-opacity: 1.0; /* Full opacity when hovered */
+}
+
+.scroll-bar:vertical .thumb {
+    -fx-background-color: lightgrey; /* Lighter grey color for the vertical scrollbar thumb */
+    -fx-background-insets: 0;
+    -fx-background-radius: 5px; /* Rounded corners for the thumb */
+    -fx-min-height: 10px; /* Minimum height for vertical thumb, adjust if necessary */
+    -fx-padding: 0.5em 0.333333em 0.5em 0.333333em; /* Padding around the thumb */
+}
+
+.scroll-bar:horizontal .thumb {
+    -fx-background-color: lightgrey; /* Lighter grey color for the horizontal scrollbar thumb */
+    -fx-background-insets: 0;
+    -fx-background-radius: 5px; /* Rounded corners for the thumb */
+    -fx-min-width: 10px; /* Minimum width for horizontal thumb, adjust if necessary */
+    -fx-padding: 0.333333em 0.5em 0.333333em 0.5em; /* Padding around the thumb */
+}
+
+.scroll-bar .increment-button,
+.scroll-bar .decrement-button {
+    -fx-background-color: transparent;
+    -fx-padding: 0;
+    -fx-min-width: 0;
+    -fx-min-height: 0;
+    -fx-pref-width: 0;
+    -fx-pref-height: 0;
+    -fx-max-width: 0;
+    -fx-max-height: 0;
+    -fx-opacity: 0;
+}
+
+/* Styling for user name label */
+.user-name-label {
+    /*-fx-text-fill: #333; !* Dark gray text color *!*/
+    -fx-font-size: 25px; /* Larger font size */
+    -fx-alignment: center; /* Align the label to the left */
+    -fx-font-family: 'Rubik';
+    -fx-font-weight: bold; /* Bold text */
+    -fx-text-fill: #5c5eee; /* Purple color for text */}
+
+.hyperlink {
+    /*-fx-text-fill: #666666; !* Grey color *!*/
+    -fx-font-size: 17px; /* Adjust font size */
+    -fx-font-family: 'Rubik';
+    -fx-underline: false; /* Disable underline */
+    -fx-text-fill: #1C2B33; /* Dark gray color */
+
+}
+
+/* Styling for hover effect */
+.hyperlink:hover {
+    -fx-text-fill: #333333; /* Darker grey color on hover */
+    -fx-cursor: hand; /* Change cursor to indicate hyperlink */
+}
+.hyperlink:pressed {
+    -fx-focus-color: transparent; /* Remove focus outline when pressed */
+}
+/*.table-cell .button {*/
+/*    !*-fx-background-color: #ee0000; !* Purple color *!*!*/
+/*    -fx-background-color: #6a5acd; !* Purple color *!*/
+/*    -fx-text-fill: white; !* White text color *!*/
+/*    -fx-font-size: 14px; !* Font size *!*/
+/*    -fx-padding: 5px 10px; !* Padding *!*/
+/*    -fx-background-radius: 5px; !* Rounded corners *!*/
+/*    -fx-border-radius: 5px; !* Rounded corners for border *!*/
+/*    -fx-font-family: 'Rubik';*/
+/*    -fx-cursor: hand ;*/
+
+/*}*/
+
+/*.table-cell .button:hover {*/
+/*    !*-fx-background-color: #ab0a12; !* Darker shade of purple-blue on hover *!*!*/
+/*    -fx-background-color: #483d8b; !* Darker shade of purple-blue on hover *!*/
+/*}*/
+
+/* Button styles */
+.table-cell .update-button {
+    -fx-background-color: #0074e4; /* Blue color */
+    -fx-text-fill: white; /* White text color */
+    -fx-font-size: 11px; /* Font size */
+    -fx-padding: 5px 10px;
+    -fx-background-radius: 5px; /* Rounded corners */
+    -fx-border-radius: 5px; /* Rounded corners for border */
+    -fx-font-family: 'Rubik';
+    -fx-cursor: hand ;
+    -fx-font-weight: bold; /* Bold text */
+    -fx-min-width: 70px; /* Smaller minimum width */
+    -fx-max-width: 70px;
+}
+
+.table-cell .delete-button {
+    -fx-background-color: #ff0000; /* Red color */
+    -fx-text-fill: white; /* White text color */
+    -fx-font-size: 11px; /* Font size */
+    -fx-padding: 5px 10px;
+    -fx-background-radius: 5px; /* Rounded corners */
+    -fx-border-radius: 5px; /* Rounded corners for border */
+    -fx-font-family: 'Rubik';
+    -fx-cursor: hand ;
+    -fx-font-weight: bold; /* Bold text */
+    -fx-min-width: 70px; /* Smaller minimum width */
+    -fx-max-width: 70px;
+}
+
+.table-cell .update-button:hover {
+    -fx-background-color: #0056b3; /* Darker shade of blue on hover */
+}
+
+.table-cell .delete-button:hover {
+    -fx-background-color: #cc0000; /* Darker shade of red on hover */
+}
+
+.label-title {
+    -fx-font-size: 20px; /* Font size */
+    -fx-font-weight: bold; /* Font weight */
+    -fx-text-fill: #333; /* Text color */
+    -fx-font-family: 'Rubik';
+}
+
+.title-label {
+    -fx-text-fill: #5c5eee; /* Dark purple color */
+    -fx-font-size: 24px; /* Larger font size */
+    -fx-alignment: center_left; /* Align the label to the left */
+    -fx-font-family: 'Metropolice';
+    -fx-padding: 0 -10 0 20; /* Adjust left and right padding */
+}
+
+.title-label1 {
+    -fx-text-fill: #5c5eee; /* Dark purple color */
+    -fx-font-size: 27px; /* Larger font size */
+    -fx-alignment: center_left; /* Align the label to the left */
+    -fx-padding: 0 -10 0 20; /* Adjust left and right padding */
+    -fx-font-family: 'Rubik';
+}
+
+.button1{
+    -fx-background-color: #6a5acd; /* Blue-purple background color */
+    -fx-text-fill: white; /* White text color */
+    -fx-font-size: 14px; /* Increase font size */
+    -fx-cursor: hand ;
+
+}
+/* Style for PieChart */
+.pie-chart {
+    -fx-border-radius: 10px;
+    -fx-border-color: #1C2B33;
+    -fx-border-width: 0px;
+    -fx-background-color: white;
+    -fx-background-radius: 5px;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.3), 10, 0, 0, 0), /* Outer shadow */
+    inset dropshadow(three-pass-box, rgba(255,255,255,0.3), 10, 0, 0, 0);
+
+}
+
+/* Style for PieChart data */
+
+/* Style for BarChart */
+/* Apply border and background radius to the entire chart */
+.bar-chart {
+    -fx-background-color: white;
+    -fx-border-radius: 10px;
+    -fx-border-color: #1C2B33;
+    -fx-border-width: 0px;
+    -fx-background-radius: 5px;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.3), 10, 0, 0, 0), /* Outer shadow */
+    inset dropshadow(three-pass-box, rgba(255,255,255,0.3), 10, 0, 0, 0);
+}
+
+/* Set the fill color for the bars */
+.bar-chart .bar {
+    -fx-background-color: #007bff; /* Royal blue color */
+}
+.axis-label {
+    -fx-text-fill: black;
+}
+/* Apply style to the legend keys in the BarChart */
+.bar-chart .chart-legend {
+    -fx-background-color: transparent;
+}
+
+.bar-chart .chart-legend-item-symbol {
+    -fx-background-color: #007bff;
+}
+
+/* Style labels */
+.label_admin {
+    -fx-text-fill: #7b68ee;
+}
+
+/* Style text inputs */
+.text-field_admin {
+    -fx-background-color: transparent;
+    -fx-text-fill: #000000; /* Change text color as needed */
+    -fx-border-color: #7b68ee;
+}
+
+/* Style password inputs */
+.password-field_admin {
+    -fx-background-color: transparent;
+    -fx-text-fill: #000000; /* Change text color as needed */
+    -fx-border-color: #7b68ee;
+}
+
+/* Style hyperlinks */
+.hyperlink_admin {
+    -fx-text-fill: #7b68ee;
+}
+
+/* Style radio buttons */
+.radio-button_admin {
+    -fx-text-fill: #7b68ee;
+}
+
+/* Style radio button text */
+.radio-button_admin .text {
+    -fx-fill: #7b68ee;
+}
+
+.search-field {
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: right center;
+    -fx-background-size: 16px 16px;
+    -fx-padding: 4px 20px 4px 4px; /* Adjust padding as needed */
+}
+.logout-button {
+    -fx-background-color: #CCCCCC; /* Light gray background */
+    -fx-text-fill: #1C2B33; /* Dark green text */
+    -fx-font-size: 14px;
+    -fx-padding: 8px 16px; /* Padding for the button */
+    -fx-border-radius: 4px; /* Rounded corners */
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 10, 0.5, 0, 2);
+
+}
+
+.logout-button:hover {
+    -fx-background-color: #BBBBBB; /* Light gray background on hover */
+}
+/* Button styles */
+/* Button styles */
+.delete-button {
+    -fx-background-color: #dc3545; /* Red background color */
+    -fx-text-fill: white; /* White text color */
+    -fx-pref-width: 80px; /* Preferred width */
+    -fx-pref-height: 30px; /* Preferred height */
+}
+
+.delete-button:hover {
+    -fx-background-color: #c82333; /* Darker red background color on hover */
+}
+
+.update-button {
+    -fx-background-color: #007bff; /* Blue background color */
+    -fx-text-fill: white; /* White text color */
+    -fx-pref-width: 80px; /* Preferred width */
+    -fx-pref-height: 30px; /* Preferred height */
+}
+
+.update-button:hover {
+    -fx-background-color: #0056b3; /* Darker blue background color on hover */
+}
+.button1{
+    -fx-background-color: #0074e4; /* Royale Blue background */
+    -fx-text-fill: #ffffff; /* White text color */
+    -fx-font-size: 14px; /* Font size */
+    -fx-padding: 10px 20px; /* Padding */
+    -fx-border-width: 0; /* No border */
+    -fx-border-radius: 5px; /* Rounded corners */
+    -fx-cursor: hand; /* Cursor style */
+    -fx-font-family: "Rubik", sans-serif;
+    -fx-font-weight: bold; /* Bold text */
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 10, 0.5, 0, 2);
+
+}
+.button1:hover {
+    -fx-background-color: #0056b3; /* Darker shade of blue on hover */
+}
+
+.navbar{
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 10, 0, 0, 5);
+}
+#suggestionListView {
+    -fx-background-color: #f0f0f0; /* Background color */
+    -fx-border-color: #cccccc; /* Border color */
+    -fx-border-radius: 0 0 5 5; /* Border radius: top-left, top-right, bottom-right, bottom-left */
+    -fx-padding: 5; /* Padding */
+
+}
+
+#suggestionListView .list-cell {
+    -fx-font-weight: bold; /* Bold font */
+}
+
+#suggestionListView .list-cell:hover {
+    -fx-background-color: #d0d0d0; /* Hover background color */
+}

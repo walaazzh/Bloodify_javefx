@@ -1,0 +1,249 @@
+@font-face {
+    font-family: 'Rubik';
+    src: url("./Inconsolata/static/Inconsolata-Regular.ttf");
+}
+.primary-color {
+    -fx-background-color: #1877f2  ; /* Royale Blue */
+}
+.secondary-color {
+    -fx-background-color: linear-gradient(to bottom, #eaf1fb, #eaf1fb); /* Gradient from white to #eaf1fb */
+}
+.facebook-button {
+    -fx-background-color: #0074e4; /* Royale Blue */
+    -fx-text-fill: #ffffff; /* White text */
+    -fx-font-family: Arial, sans-serif;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-padding: 10px 20px;
+    -fx-border-width: 0;
+    -fx-border-radius: 5px;
+    -fx-cursor: hand;
+    -fx-transition: background-color 0.3s ease;
+}
+.vbox {
+    -fx-background-color: #0074e4; /* Royale Blue */
+    -fx-text-fill: #fff; /* White text */
+    -fx-padding: 20px; /* Adjust padding as needed */
+    -fx-border-radius: 10px; /* Rounded corners */
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.1), 10, 0, 0, 0);
+    -fx-transition: background-color 0.3s ease;
+}
+.vbox:hover {
+    -fx-background-color: #0056b3; /* Darker shade of blue on hover */
+    -fx-cursor: hand; /* Change cursor on hover */
+}
+.vbox .content {
+    -fx-padding: 10px; /* Inner content padding */
+}
+
+.facebook-button:hover {
+    -fx-background-color: #0056b3; /* Darker shade of blue on hover */
+}
+active-button:hover {
+    -fx-background-color: #575757
+}
+.anchor {
+    -fx-background-color: #DDDDDD; /* Light Grey */
+    /*-fx-background-color: #f3f2f2; !* Light Grey *!*/
+    -fx-padding: 20px; /* Adjust padding as needed */
+    -fx-border-radius: 10px; /* Rounded corners */
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.1), 10, 0, 0, 0);
+}
+
+.label {
+    -fx-text-fill: #333333; /* Dark Grey text */
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+}
+.input {
+    -fx-background-color: #ffffff; /* White background */
+    -fx-border-width: 1px;
+    -fx-border-color: #cccccc; /* Light Grey border */
+    -fx-border-radius: 5px; /* Rounded corners */
+    -fx-padding: 4px;
+    -fx-font-size: 14px;
+    -fx-font-family: "Rubik", sans-serif;
+}
+.input:focused {
+    -fx-border-color: #0074e4; /* Royale Blue border on focus */
+    -fx-border-width: 2px;
+}
+.vbox > .anchor-container {
+    -fx-background-color: #0074e4; /* Royale Blue */
+    -fx-padding: 20px;
+    -fx-border-radius: 5px;
+}
+.vbox > .anchor-container > label {
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-margin-bottom: 5px; /* Adjust margin as needed */
+    -fx-text-fill: white; /* White text color */
+}
+.vbox > .anchor-container > input[type="text"],
+.vbox > .anchor-container > input[type="password"] {
+    -fx-background-color: white; /* White background */
+    -fx-padding: 10px;
+    -fx-font-size: 14px;
+    -fx-font-family: "Rubik", sans-serif;
+    -fx-border-width: 1px;
+    -fx-border-color: #ccc; /* Grey border color */
+    -fx-border-radius: 5px;
+    -fx-pref-width: 200px; /* Adjust width as needed */
+    -fx-pref-height: 30px; /* Adjust height as needed */
+    -fx-margin-bottom: 10px;
+    -fx-text-fill: white; /* White text color */
+}
+.vbox > .anchor-container > input[type="text"]:focused,
+.vbox > .anchor-container > input[type="password"]:focused {
+    -fx-border-color: #fff; /* White border color on focus */
+    -fx-border-width: 2px; /* Increase border width on focus */
+    -fx-border-radius: 5px;
+}
+.anchor-pane-labels > .label {
+    -fx-text-fill: white; /* Set label text color to white */
+    -fx-font-size: 14px; /* Adjust font size as needed */
+    -fx-font-family: "Arial"; /* Specify font family */
+    -fx-font-weight: bold; /* Make font bold */
+}
+.side-button {
+    -fx-background-color: #1877f2; /* Royale Blue */
+    -fx-text-fill: #ffffff; /* White text */
+    -fx-font-size: 14px; /* Font size */
+    -fx-font-weight: bold; /* Bold font weight */
+    -fx-pref-width: 267px; /* Set preferred width */
+    -fx-pref-height: 50px; /* Set preferred height */
+    -fx-border-radius: 0px; /* No border radius */
+    -fx-border-width: 0px; /* No border width */
+    -fx-cursor: hand ;
+}
+.side-button:hover {
+    -fx-background-color: #0a58ca; /* Darker shade of blue on hover */
+}
+.active-button {
+    -fx-background-color:#0a58ca; /* Lime Green */
+    -fx-text-fill: white; /* White text color */
+    -fx-font-size: 14px; /* Font size */
+    -fx-font-weight: bold; /* Bold font weight */
+    -fx-pref-width: 267px; /* Set preferred width */
+    -fx-pref-height: 50px; /* Set preferred height */
+    -fx-border-radius: 0px; /* No border radius */
+    -fx-border-width: 0px; /* No border width */
+    -fx-cursor: hand ;
+}
+.active-button:hover {
+    -fx-background-color:#0056b3; /* Lime Green */
+
+}
+.dialog-pane.error {
+    -fx-background-color: white; /* Light red background */
+    -fx-border-width: 0px; /* Border width */
+    -fx-border-color: #721C24; /* Border color */
+    -fx-font-weight: bold;
+}
+.dialog-pane.error .header-panel {
+    -fx-pref-height: 0; /* Set the height of the header panel to zero */
+    -fx-padding: 0; /* Remove any padding */
+}
+.dialog-pane.error .header-panel {
+    -fx-background-color: white; /* Light red background for header */
+}
+.dialog-pane.error .header-panel .label {
+    -fx-text-fill: black; /* Dark red text color for header */
+    -fx-font-size: 16px; /* Header font size ////////////////////////////////////*/
+    -fx-font-family: "Rubik", sans-serif;
+    -fx-font-weight: bold;
+}
+.text-input {
+    -fx-border-color: #211111;
+    /*-fx-border-color: #4d4d4d;*/
+    -fx-border-radius: 5px;
+    -fx-background-color: transparent;
+    -fx-background-radius: 5px;
+    -fx-font-size: 13px;
+    -fx-transition: -fx-border-color 0.3s ease;
+    -fx-font-family: "Rubik", sans-serif;
+    -fx-border-width: 2px;/* !* Set border width *!//////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+}
+.text-input:hover {
+    -fx-border-color: #666; /* Darker border color on hover */
+}
+
+.text-input:focused {
+    -fx-background-color: transparent; /* Make the background transparent */
+    -fx-border-color: royalblue; /* Royal blue border color when focused */
+    -fx-border-width: 2px; /* Set the border width */
+    -fx-border-radius: 5px; /* Set the border radius */
+    -fx-border-style: solid; /* Specify the border style */
+    -fx-border-insets: 0; /* Set the border insets */
+    /*-fx-effect: dropshadow(gaussian, royalblue, 5, 0, 0, 0); !* Add a subtle shadow when focused *!*/
+}
+.input-error {
+    /* Optional styles to enhance the error indication */
+    background-color: #ffcccc; /* Light red background */
+    color: black; /* Text color */
+}
+.text-field-error {
+    -fx-border-color: red;
+    -fx-border-width: 2;
+    /* Optional styles to enhance the error indication */
+}
+.custom-alert {
+    -fx-background-color: lightcoral; /* Set background color to light red */
+}
+
+.custom-alert .alert-content {
+    -fx-text-fill: red; /* Set text color to red */
+}
+.text1{
+    -fx-font-family: 'Rubik';
+    -fx-font-weight: 500; /* Medium font weight */
+    -fx-fill: #1C2B33; /* Dark gray color */
+    /* Additional styles for your text */
+}
+.imageView {
+    -fx-cursor: hand;
+}
+
+.imageView1{
+    -fx-cursor: default;
+}
+.message-bar {
+    -fx-background-color: linear-gradient(to bottom, #D4EDDA, #ffffff); /* Gradient from white to #D4EDDA */
+    -fx-border-color: #139a2b; /* Border color */
+    -fx-border-width: 1px; /* Border width */
+    -fx-padding: 10px; /* Padding */
+    -fx-border-radius: 15px; /* Rounded corners */
+    -fx-background-radius: 15px; /* Rounded corners */
+}
+
+.message-bar .label {
+    -fx-text-fill: #155724; /* Dark green text color */
+    -fx-font-size: 14px; /* Font size */
+    -fx-font-weight: bold; /* Bold font */
+}
+
+/* Animated check */
+.message-bar .check-icon {
+    -fx-shape: "M 0 4 L 2 6 L 4 0"; /* Checkmark path */
+    -fx-stroke: #28A745; /* Green stroke color */
+    -fx-stroke-width: 2px; /* Stroke width */
+    -fx-translate-y: -2px; /* Adjust position */
+    -fx-opacity: 0; /* Initially hidden */
+    -fx-transition: opacity 0.5s; /* Opacity transition */
+}
+
+.message-bar .checked {
+    -fx-opacity: 1; /* Show checkmark */
+}
+
+.message-bar1 {
+    -fx-background-color: #cfeed6; /* Light green background */
+    -fx-border-color: #139a2b; /* Border color */
+    -fx-border-width: 1px; /* Border width */
+    -fx-padding: 10px; /* Padding */
+}
+.message-bar .label1 {
+    -fx-text-fill: #155724; /* Dark green text color */
+    -fx-font-size: 14px; /* Font size */
+    -fx-font-weight: bold; /* Bold font */
+}

@@ -1,0 +1,6 @@
+01:47:43.699 [JavaFX Application Thread] INFO  controllers.bloodify.events.Showevent - Export events method started.
+01:47:44.118 [JavaFX Application Thread] WARN  org.apache.poi.POIDocument - DocumentSummaryInformation property set came back as null
+01:47:44.118 [JavaFX Application Thread] WARN  org.apache.poi.POIDocument - SummaryInformation property set came back as null
+09:50:41.785 [JavaFX Application Thread] INFO  controllers.bloodify.events.Showevent - Export events method started.
+09:50:42.208 [JavaFX Application Thread] WARN  org.apache.poi.POIDocument - DocumentSummaryInformation property set came back as null
+09:50:42.209 [JavaFX Application Thread] WARN  org.apache.poi.POIDocument - SummaryInformation property set came back as null
